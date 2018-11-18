@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Raccoon](https://up.htmlacademy.ru/htmlcss/23/user/837377).
+* Студент: [Жанар Темиргалиева](https://up.htmlacademy.ru/htmlcss/23/user/837377).
 * Наставник: [Макс Пушкарев](https://htmlacademy.ru/profile/id87167).
 
 ---
