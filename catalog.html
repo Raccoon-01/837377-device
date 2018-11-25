@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Каталог интернет магазина Device</title>
+</head>
+<body>
+<header class="main-header">
+	<nav class="header-navigation">
+		<a href="index.html"><img src="logo-header.png" width="100" height="100" alt="Интернет магазин Device"></a><br>
+		<!--здесь и далее в изображениях размер ширины и высоты условное, в дальнейшем НЕОБХОДИМО ЗАМЕНИТЬ-->
+		<span>Поиск по сайту</span>
+            <!--Здесь будет форма/интерактив.эл.-->
+        <ul class="user-navigation">
+        	<li class="user-name">Валентин Петухов</li>
+    		<li class="user-name-exit">Выйти</li>
+    	</ul>
+    	<ul class="basket-navigation">
+    		<li><a href="compare.html">Сравнить</a></li>
+    		<li><a href="basket">Корзина</a></li>
+    	</ul>
+    	<ul class="site-navigation">
+    		<li class="site-navigation-current">Каталог товаров</li>
+     	</ul>
+     	<ul class="site-navigation">
+    		<li><a href="delivery.html">Доставка</a></li>
+    		<li><a href="warranty.html">Гарантия</a></li>
+    	</ul>	
+    	<ul class="site-navigation">
+    		<li><a href="contacts.html">Контакты</a></li>
+     	</ul>
+	</nav>
+</header>
+<main class="container">
+	<!--здесь будет основной контент-->
+	<h1>Моноподы для селфи</h1>
+	<ul class="breadcrumbs">
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="catalog.html">Каталог товаров</a></li>
+		<li><a class="breadcrumbs-current">Моноподы для селфи</a></li>
+	</ul>
+	<section class="filters">
+		<!--Здесь будет интеракт.эл.-->
+		<h3>Цвет</h3>
+        <ul class="filters-colors">
+        	<li>Черный</li>
+        	<li>Белый</li>
+        	<li>Синий</li>
+        	<li>Красный</li>
+        	<li>Розовый</li>
+        </ul>
+        <h3>Blutooth</h3>
+        <ul class="flters-blutooth">
+        	<li>Есть</li>
+        	<li>Нет</li>
+        </ul>
+        <a class="button" href="#">Показать</a>
+	</section>
+	<section class="catalog">
+		<h2 class="visually-hidden">Список товаров</h2>
+		<ul class="catalog-list">
+			<li class="catalog-item">
+				<h3>Любительская селфи-палка</h3>
+				<p class="catalog-item-image">
+					<a href="catalog-item-1.html"><img src="item-1.jpg" width="100" height="100" alt="Любительская селфи-палка"></a>
+				</p>
+				<p class="catalog-item-price">500 руб.</p>
+			</li>
+			<li>
+				<h3>Профессиональная селфи-палка</h3>
+				<p class="catalog-item-image">
+					<a href="catalog-item-2.html"><img src="item-2.jpg" width="100" height="100" alt="Профессиональная селфи-палка"></a>
+				</p>
+				<p class="catalog-item-price">1500 руб.</p>
+			</li>
+			<li>
+				<h3>Непотопляемая селфи-палка</h3>
+				<p class="catalog-item-image">
+					<a href="catalog-item-3.html"><img src="item-3.jpg" width="100" height="100" alt="Непотопляемая селфи-палка"></a>
+				</p>
+				<p class="catalog-item-price">2500 руб.</p>
+			</li>
+			<li>
+				<h3>Селфи-палка «Следуй за мной»</h3>
+				<p class="catalog-item-image">
+					<a href="catalog-item-4.html"><img src="item-4.jpg" width="100" height="100" alt="Селфи-палка «Следуй за мной»"></a>
+				</p>
+				<p class="catalog-item-price">4900 руб.</p>
+			</li>
+		</ul>
+	</section>
+</main>
+<footer class="main-footer">
+	<p class="footer-contacts">
+		<a href="index.html"><img src="logo-footer.png" width="100" height="100" alt="Интернет магазин Device"></a><br>
+		г. Москва, ул. Строителей, д. 15<br>
+        <span class="contact-phone">Тел.: +7 (495) 495-95-95</span>
+	</p>
+	<nav class="footer-navigation">
+		<ul>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="footer-social">
+        <ul>
+            <li><a class="social-button" href="#">Facebook</a></li>
+            <li><a class="social-button" href="#">Instagram</a></li>
+            <li><a class="social-button" href="#">Twitter</a></li>
+        </ul>
+    </div>
+    <nav class="user-navigation">
+        <ul>
+            <li class="user-name">Валентин Петухов</li>
+            <li class="user-name-exit">Выйти</li>
+        </ul>
+    </nav>
+    <nav class="basket-navigation">
+        <ul>
+                <li><a href="compare.html">Сравнить</a></li>
+                <li><a href="basket">Корзина</a></li>
+        </ul>
+    </nav>
+</footer>
+<section class="modal modal login">
+	<h2>Валентин Петухов</h2>
+     	<!--Здесь будет форма-->
+    <a class="modal-close-login" href="index.html">Выйти</a>
+</section>
+</body>
+</html>
