@@ -5,129 +5,111 @@
 	<title>Каталог интернет магазина Device</title>
 </head>
 <body>
-<header class="main-header">
-	<nav class="header-navigation">
-		<a href="index.html"><img src="img/logo-header.svg" width="162" height="35" alt="Интернет магазин Device"></a><br>
-		<!--здесь и далее в изображениях размер ширины и высоты условное, в дальнейшем НЕОБХОДИМО ЗАМЕНИТЬ-->
-		<span>Поиск по сайту</span>
-            <!--Здесь будет форма/интерактив.эл.-->
-        <ul class="user-navigation">
-        	<li class="user-name">Валентин Петухов</li>
-    		<li class="user-name-exit">Выйти</li>
-    	</ul>
-    	<ul class="basket-navigation">
-    		<li><a href="compare.html">Сравнить</a></li>
-    		<li><a href="basket">Корзина</a></li>
-    	</ul>
-    	<ul class="site-navigation">
-    		<li class="site-navigation-current">Каталог товаров</li>
-     	</ul>
-     	<ul class="site-navigation">
-    		<li><a href="delivery.html">Доставка</a></li>
-    		<li><a href="warranty.html">Гарантия</a></li>
-    	</ul>	
-    	<ul class="site-navigation">
-    		<li><a href="contacts.html">Контакты</a></li>
-     	</ul>
-	</nav>
-</header>
-<main class="container">
-	<!--здесь будет основной контент-->
-	<h1>Моноподы для селфи</h1>
-	<ul class="breadcrumbs">
-		<li><a href="index.html">Главная</a></li>
-		<li><a href="catalog.html">Каталог товаров</a></li>
-		<li><a class="breadcrumbs-current">Моноподы для селфи</a></li>
-	</ul>
-	<section class="filters">
-		<!--Здесь будет интеракт.эл.-->
-		<h3>Цвет</h3>
-        <ul class="filters-colors">
-        	<li>Черный</li>
-        	<li>Белый</li>
-        	<li>Синий</li>
-        	<li>Красный</li>
-        	<li>Розовый</li>
-        </ul>
-        <h3>Blutooth</h3>
-        <ul class="flters-blutooth">
-        	<li>Есть</li>
-        	<li>Нет</li>
-        </ul>
-        <a class="button" href="#">Показать</a>
-	</section>
-	<section class="catalog">
-		<h2 class="visually-hidden">Список товаров</h2>
-		<ul class="catalog-list">
-			<li class="catalog-item">
-				<h3>Любительская селфи-палка</h3>
-				<p class="catalog-item-image">
-					<a href="catalog-item-1.html"><img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
-				</p>
-				<p class="catalog-item-price">500 руб.</p>
-			</li>
-			<li>
-				<h3>Профессиональная селфи-палка</h3>
-				<p class="catalog-item-image">
-					<a href="catalog-item-2.html"><img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></a>
-				</p>
-				<p class="catalog-item-price">1500 руб.</p>
-			</li>
-			<li>
-				<h3>Непотопляемая селфи-палка</h3>
-				<p class="catalog-item-image">
-					<a href="catalog-item-3.html"><img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
-				</p>
-				<p class="catalog-item-price">2500 руб.</p>
-			</li>
-			<li>
-				<h3>Селфи-палка «Следуй за мной»</h3>
-				<p class="catalog-item-image">
-					<a href="catalog-item-4.html"><img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a>
-				</p>
-				<p class="catalog-item-price">4900 руб.</p>
-			</li>
+	<header class="main-header">
+		<div>
+			<a href="index.html"><img src="img/logo-header.svg" width="162" height="35" alt="Интернет магазин Device"></a>
+		</div>
+		<div>
+			<form action="#" method="get"><input type="text" name="search" value="Поиск по сайту"></form>
+			<ul>
+				<li><a href="user-name.html">Валентин Петухов</a></li>
+				<li><a href="user-link-exit.html">Выйти</a></li>
+				<li><a href="compare.html">Сравнить</a></li>
+				<li><a href="basket.html">Корзина</a></li>
+			</ul>
+		</div>
+		<nav class="main-navigation">
+		<div class="catalog-navigation"><a href="catalog-current">Каталог товаров</a>
+		</div>
+		<ul class="site-navigation">
+			<li><a href="delivery.html">Доставка</a></li>
+			<li><a href="warranty.html">Гарантия</a></li>
+			<li><a href="contacts.html">Контакты</a></li>
 		</ul>
+		</nav>
+	</header>
+	<main class="container">
+	<!--здесь будет основной контент-->
+		<h1>Моноподы для селфи</h1>
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Каталог товаров</a></li>
+			<li><a class="breadcrumbs-current">Моноподы для селфи</a></li>
+		</ul>
+	<section>
+		<h2 class="visually hidden">Фильтр и сортировка каталога товаров</h2>
+		<aside>
+			<form action="#" method="post"></form>
+				<!--Здесь будет форма-->
+			<a class="button" href="#">Показать</a>
+		</aside>
+		<div class="catalog">
+			<h3 class="visually-hidden">Список товаров</h3>
+			<ul class="catalog-list">
+				<li>
+					<a href="catalog-item-1.html"><img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
+					<p>
+						<span class="catalog-item">Любительская селфи-палка</span>
+						<span class="catalog-item-price">500 руб.</span>
+					</p>
+				</li>
+				<li>
+					<a href="catalog-item-2.html"><img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></a>
+					<p>
+						<span class="catalog-item">Профессиональная селфи-палка</span>
+						<span class="catalog-item-price">1500 руб.</span>
+					</p>
+				</li>
+				<li>
+					<a href="catalog-item-3.html"><img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+					<p>
+						<span class="catalog-item">Непотопляемая селфи-палка</span>
+						<span class="catalog-item-price">2500 руб.</span>
+					</p>
+				</li>
+				<li>
+					<a href="catalog-item-4.html"><img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a>
+					<p>
+						<span class="catalog-item">Селфи-палка «Следуй за мной»</span>
+						<span class="catalog-item-price">4900 руб.</span>
+					</p>
+				</li>
+			</ul>
+		</div>
 	</section>
-</main>
-<footer class="main-footer">
-	<p class="footer-contacts">
-		<a href="index.html"><img src="img/logo-footer.svg" width="162" height="35" alt="Интернет магазин Device"></a><br>
-		г. Москва, ул. Строителей, д. 15<br>
-        <span class="contact-phone">Тел.: +7 (495) 495-95-95</span>
-	</p>
-	<nav class="footer-navigation">
-		<ul>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="warranty.html">Гарантия</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </nav>
-    <div class="footer-social">
-        <!--ниже иконки соц.сетей в белом цвете, позже с помощью CSS необх. установить прозрачность и др. цвет-->
-        <ul>
-            <li><a class="social-button" href="#"><img src="img/facebook.svg" width="32" height="32" alt="facebook"></a></li>
-            <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="instagram"></a></li>
-            <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="twitter"></a></li>
-        </ul>
-    </div>
-    <nav class="user-navigation">
-        <ul>
-            <li class="user-name">Валентин Петухов</li>
-            <li class="user-name-exit">Выйти</li>
-        </ul>
-    </nav>
-    <nav class="basket-navigation">
-        <ul>
-                <li><a href="compare.html">Сравнить</a></li>
-                <li><a href="basket">Корзина</a></li>
-        </ul>
-    </nav>
-</footer>
-<section class="modal modal login">
-	<h2>Валентин Петухов</h2>
-     	<!--Здесь будет форма-->
-    <a class="modal-close-login" href="index.html">Выйти</a>
-</section>
+	</main>
+	<footer class="main-footer">
+		<div>
+			<a href="index.html"><img src="img/logo-footer.svg" width="162" height="35" alt="Интернет магазин Device"></a>
+			<ul>
+				<li><a href="user-name.html">Валентин Петухов</a></li>
+				<li><a href="user-link-exit.html">Выйти</a></li>
+				<li><a href="compare.html">Сравнить</a></li>
+				<li><a href="basket">Корзина</a></li>
+			</ul>
+		</div>
+		<div>
+			<p>г. Москва, ул. Строителей, д. 15</p>
+			<ul>
+				<li><a href="delivery.html">Доставка</a></li>
+				<li><a href="warranty.html">Гарантия</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<p>Тел.: +7 (495) 495-95-95</p>
+		</div>
+		<div class="footer-social">
+		<!--ниже иконки соц.сетей в белом цвете, позже с помощью CSS необх. установить прозрачность и др. цвет-->
+			<ul>
+				<li><a class="social-button" href="#"><img src="img/facebook.svg" width="32" height="32" alt="facebook"></a></li>
+				<li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="instagram"></a></li>
+				<li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="twitter"></a></li>
+			</ul>
+			<a href="index.html"><img src="img/logo-html.svg" width="27" height="34" alt="Ссылка-значок на главную страницу"></a>
+		</div>
+	</footer>
+	<!--<section class="modal modal login">
+		<h2>Валентин Петухов</h2>
+		<a class="modal-close-login" href="index.html">Выйти</a>
+	</section> (Здесь будет форма)-->
 </body>
 </html>

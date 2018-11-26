@@ -2,98 +2,91 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Интернет магазин Device
-	</title>
+	<title>Интернет магазин Device</title>
 </head>
 <body>
-    <header class="main-header">
-    	<nav class="main-navigation">
-    		<a class="main-header-logo">
-                <img src="img/logo-header.svg" width="162" height="35" alt="Интернет магазин Device">
-    		</a><br>
-    		<span>Поиск по сайту</span>
-            <!--Здесь будет форма/интерактив.эл.-->
-    		<ul class="user-navigation">
-    			<li class="user-link">Войти</li>
-    		</ul>
-    		<ul class="basket-navigation">
-    			<li><a href="compare.html">Сравнить</a></li>
-    			<li><a href="basket">Корзина</a></li>
-    		</ul>
-    		<ul class="site-navigation">
-    			<li> <a href="catalog.html">Каталог товаров</a></li>
-     		</ul>
-     		<ul class="site-navigation">
-    			<li><a href="delivery.html">Доставка</a></li>
-    			<li><a href="warranty.html">Гарантия</a></li>
-    		</ul>	
-    		<ul class="site-navigation">
-    			<li><a href="contacts.html">Контакты</a></li>
-     		</ul>
-    	</nav>
-    </header>
+	<header class="main-header">
+		<div>  	
+			<a class="main-header-logo">
+			<img src="img/logo-header.svg" width="162" height="35" alt="Интернет магазин Device"></a>
+		</div>
+		<div>
+			<form action="#" method="get"><input type="text" name="search" value="Поиск по сайту"></form>
+			<ul>
+				<li><a href="user-link.html">Войти</a></li>
+				<li><a href="compare.html">Сравнить</a></li>
+				<li><a href="basket.html">Корзина</a></li>
+			</ul>
+		</div>
+		<nav class="main-navigation">
+			<div class="catalog-navigation"><a href="catalog.html">Каталог товаров</a>
+			</div>
+			<ul class="site-navigation">
+				<li><a href="delivery.html">Доставка</a></li>
+				<li><a href="warranty.html">Гарантия</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
 	<main class="container">
-		<!--здесь будет основной контент-->
-        <section class="about-us">
-            <h1>О нас</h1>
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-            <ul>
-            	<li>Деловые Линии</li>
-            	<li>Автотрейдинг</li>
-            	<li>ЖелДорЭкспедиция</li>
-            </ul>
-            <a href="about-us.html">Подробнее о нас</a>
-        </section>
-        <section class="contacts">
-        	<h1>Контакты</h1>
-        	<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p> 
-        	<p>
-        		<a href="map.html"> <img src="img/map.jpg" width="560" height="222" alt="Наш адрес по карте"></a>
-        	</p>
-            <span>Напишите нам</span>
-            <!--Здесь будет поп-ап-->
-        </section>
+		<section>
+			<h1 class="visually hidden">Каталог товаров</h1>
+			<!--здесь будет основной контент-->
+		</section>
+		<section>
+			<div class="about-us">
+				<h2>О нас</h2>
+				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+			<ul>
+				<li>Деловые Линии</li>
+				<li>Автотрейдинг</li>
+				<li>ЖелДорЭкспедиция</li>
+			</ul>
+				<a href="about-us.html">Подробнее о нас</a>
+			</div>
+			<div class="contacts">
+			   <h2>Контакты</h2>
+			   <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p> 
+			   <p>
+			   <a href="map.html"> <img src="img/map.jpg" width="560" height="222" alt="Наш адрес по карте"></a>
+			   </p>
+				<a href="feedback.html">Напишите нам</a>
+			</div>    <!--Здесь будет поп-ап-->
+		</section>
 	</main>
 	<footer class="main-footer">
-		<p class="footer contacts">
-        <a class="main-footer-logo" href="#top">
-                <img src="img/logo-footer.svg" width="162" height="35" alt="Интернет магазин Device">
-        </a><br>
-        г. Москва, ул. Строителей, д. 15<br>
-        <span class="contact-phone">Тел.: +7 (495) 495-95-95</span>          
-        </p>
-        <nav class="footer-navigation"><ul>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="warranty.html">Гарантия</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        </nav>
-        <div class="footer-social">
-             <!--ниже иконки соц.сетей в белом цвете, позже с помощью CSS необх. установить прозрачность и др. цвет-->
-            <ul>
-                <li><a class="social-button" href="#"><img src="img/facebook.svg" width="32" height="32" alt="facebook"></a></li>
-                <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="instagram"></a></li>
-               <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="twitter"></a></li>
-            </ul>
-        </div>
-        <nav class="user-navigation">
-            <ul>
-                <li class="user-link">Войти</li>
-            </ul>
-        </nav>
-        <nav class="basket-navigation">
-            <ul>
-                <li><a href="compare.html">Сравнить</a></li>
-                <li><a href="basket">Корзина</a></li>
-            </ul>
-        </nav>
-        </footer>
-        <section class="modal modal login">
-            <h2>Вход в личный кабинет</h2>
-            <p>Введите свой логин и пароль</p>
-            <!--Здесь будет форма-->
-            <span class="modal-close">x</span>
-</section>
+		<div>
+			<a class="main-footer-logo" href="#top"><img src="img/logo-footer.svg" width="162" height="35" alt="Интернет магазин Device"></a>
+			<ul>
+				<li><a href="user-link.html">Войти</a></li>
+				<li><a href="compare.html">Сравнить</a></li>
+				<li><a href="basket.html">Корзина</a></li>
+			</ul>
+		</div>
+		<div>
+			<p>г. Москва, ул. Строителей, д. 15</p>
+			<ul>
+				<li><a href="delivery.html">Доставка</a></li>
+				<li><a href="warranty.html">Гарантия</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<p>Тел.: +7 (495) 495-95-95</p>
+		</div>
+		<div class="footer-social">
+			 <!--ниже иконки соц.сетей в белом цвете, позже с помощью CSS необх. установить прозрачность и др. цвет-->
+			<ul>
+				<li><a class="social-button" href="#"><img src="img/facebook.svg" width="32" height="32" alt="facebook"></a></li>
+				<li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="instagram"></a></li>
+			   <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="twitter"></a></li>
+			</ul>
+			<a href="#top"><img src="img/logo-html.svg" width="27" height="34" alt="Ссылка-значок на главную страницу"></a>
+		</div>        
+	</footer>
+	<!--<section class="modal modal login">
+		<h2>Вход в личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+			<span class="modal-close">x</span>
+	</section> (Здесь будет форма)-->
 </body>
 </html>
