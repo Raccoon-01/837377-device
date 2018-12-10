@@ -3,27 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<title>Каталог интернет магазина Device</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
 		<div>
-			<a href="index.html">
-				<img src="img/logo-header.svg" width="162" height="35" alt="Интернет магазин Device">
-			</a>
+			<a class="header-logo" href="index.html">Device</a>
 		</div>
 		<div>
 			<form action="#" method="get">
-				<label class="visually-hidden" for="search">Поиск по сайту</label>
+				<label class="visually-hidden search" for="search">Поиск по сайту</label>
 				<input type="text" id="search" name="search" placeholder="Поиск по сайту">
+				<button class="find-button" type="submit" name="button">Найти</button>
 			</form>
-			<ul>
+			<ul class="user-navigation">
 				<li>
 					<a href="user-profile-page.html">
 						<img src="img/user.svg" alt="Войти на страницу пользователя" width="13" height="12">Валентин Петухов
 					</a>
 				</li>
 				<li>
-					<a href="#">Выйти</a>
+					<a class="user-profile-close" href="#">Выйти</a>
 				</li>
 				<li>
 					<a href="compare.html">
@@ -39,10 +40,10 @@
 		</div>
 		<nav class="main-navigation">
 		<div class="catalog-navigation">
-			<a class="catalog-current">Каталог товаров
+			<a class="current catalog-navigation-link">Каталог товаров
 			</a>
-			<div class="visually-hidden">
-				<ul>
+			<div>
+				<ul class="catalog-navigation-filter">
 					<li>
 						<a href="#">Виртуальная реальность</a>
 						<a href="#">Моноподы для селфи</a>
@@ -67,25 +68,25 @@
 	</header>
 	<main class="container">
 	<!--здесь будет основной контент-->
-		<h1>Моноподы для селфи</h1>
+		<h1 class="catalog-title">Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="catalog.html">Каталог товаров</a></li>
 			<li><a class="breadcrumbs-current">Моноподы для селфи</a></li>
 		</ul>
 	<section>
-		<h2 class="visually hidden">Фильтр и сортировка каталога товаров</h2>
+		<h2 class="visually-hidden">Фильтр и сортировка каталога товаров</h2>
 		<aside class="filter-menu">
-			<h3>Фильтр:</h3>
+			<h3 class="filter-title">Фильтр:</h3>
 			<form action="#" method="get">
 				<fieldset class="price-range-filter">
-					<legend>Стоимость</legend>
+					<legend class="label">Стоимость</legend>
 					<label for="range-id">от
 						<input type="range" id="range-id" name="price-range" min="0" max="8000" value="5000">до
 					</label><!--необходимо доработать-->
 				</fieldset>
 				<fieldset class="color-filter">
-					<legend>Цвет</legend>
+					<legend class="label">Цвет</legend>
 					<ul class="color-filter-option-list">
 						<li>
 							<input type="checkbox" id="filter-black" name="black" checked>
@@ -110,7 +111,7 @@
 					</ul>
 				</fieldset>
 				<fieldset class="blutooth-filter">
-					<legend>Blutooth</legend>
+					<legend class="label">Blutooth</legend>
 					<ul class="blutooth-filter-option">
 						<li>
 							<input type="radio" id="on" name="blutooth-option" checked>
@@ -127,8 +128,8 @@
 		</aside>
 		<div class="catalog">
 			<h3 class="visually-hidden">Список товаров</h3>
-			<h3>Сортировка:</h3>
-			<ul>
+			<h3 class="filter-title">Сортировка:</h3>
+			<ul class="filter-list">
 				<li><a href="#">По цене</a></li>
 				<li><a href="#">По типу</a></li>
 				<li><a href="#">По популярности</a></li>
@@ -146,7 +147,7 @@
 							<span class="catalog-item-price">500 руб.</span>
 						</a>
 					</p>
-					<div class="visually-hidden">
+					<div class="">
 						<a href="#" class="button">В корзину</a>
 						<a href="#" class="link">Добавить к сравнению</a>
 					</div>
@@ -163,7 +164,7 @@
 							<span class="catalog-item-price">1500 руб.</span>
 						</a>
 					</p>
-					<div class="visually-hidden">
+					<div class="">
 						<a href="#" class="button">В корзину</a>
 						<a href="#" class="link">Добавить к сравнению</a>
 					</div>
@@ -180,7 +181,7 @@
 							<span class="catalog-item-price">2500 руб.</span>
 						</a>
 					</p>
-					<div class="visually-hidden">
+					<div class="">
 						<a href="#" class="button">В корзину</a>
 						<a href="#" class="link">Добавить к сравнению</a>
 					</div>
@@ -197,7 +198,7 @@
 							<span class="catalog-item-price">4900 руб.</span>
 						</a>
 					</p>
-					<div class="visually-hidden">
+					<div class="">
 						<a href="#" class="button">В корзину</a>
 						<a href="#" class="link">Добавить к сравнению</a>
 					</div>
@@ -217,16 +218,17 @@
 	</main>
 	<footer class="main-footer">
 		<div>
-			<a href="index.html">
-				<img src="img/logo-footer.svg" width="162" height="35" alt="Интернет магазин Device">
-			</a>
-			<ul>
+			<a class="footer-logo" href="index.html">Device</a>
+			<ul class="footer-user-navigation">
 				<li>
 					<a href="user-profile-page.html">
 						<img src="img/user-footer.svg" alt="Войти на страницу пользователя" width="13" height="12">Валентин Петухов
 					</a>
 				</li>
-				<li><a href="#">Выйти</a></li>
+				<li>
+					<a class="footer-user-profile-close" href="#">Выйти
+					</a>
+				</li>
 				<li><a href="compare.html">
 					<img src="img/compare-footer.svg" alt="Сравнить" width="10" height="10">Сравнить
 				</a>
@@ -240,7 +242,7 @@
 		</div>
 		<div>
 			<p>г. Москва, ул. Строителей, д. 15</p>
-			<ul>
+			<ul class="site-navigation-footer">
 				<li><a href="delivery.html">Доставка</a></li>
 				<li><a href="warranty.html">Гарантия</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
@@ -252,7 +254,7 @@
 				<img src="img/footer-decor-element.png" alt="Декаративная линия">
 			</span>
 		<!--ниже иконки соц.сетей в белом цвете, позже с помощью CSS необх. установить прозрачность и др. цвет-->
-			<ul>
+			<ul class="social-links">
 				<li>
 					<a class="social-button" href="#">
 						<img src="img/facebook.svg" width="32" height="32" alt="facebook">

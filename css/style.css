@@ -1,0 +1,334 @@
+/* веб шрифты */
+@font-family {
+	font-family: "Gilroy ExtraBold";
+	src: url("../webfonts/gilroyextrabold.woff2") format("woff2");
+	src: url("../webfonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-family {
+	font-family: "Gilroy Light";
+	src: url("../webfonts/gilroylight.woff2") format("woff2");
+	src: url("../webfonts/gilroylight.woff") format("woff");
+}
+
+@font-family {
+	font-family: "Open Sans";
+	src: url("../webfonts/opensans.woff2") format("woff2");
+	src: url("../webfonts/opensans.woff") format("woff");
+}
+
+@font-family {
+	font-family: "Open Sans Light";
+	src: url("../webfonts/opensanslight.woff2") format("woff2");
+	src: url("../webfonts/opensanslight.woff") format("woff");
+}
+/*глобальные базовые стили*/
+body {
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: rgba(70, 70, 70, 1);
+	background-color: rgba(255, 255, 255, 1);
+}
+
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
+}
+
+ul {
+	list-style: none;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.main-header {
+	background-color: rgba(247, 226, 150, 1);
+}
+
+.header-logo {
+	font-family: "Gilroy ExtraBold";
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+
+.find-button {
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(247, 226, 150, 1);
+	border: 2px solid black;
+}
+
+.find-button:hover {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 1);
+	border: none;
+}
+
+.find-button:active {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.3);
+	border: none;
+}
+
+.header-logo:hover,
+.user-navigation a:hover,
+.catalog-navigation-link:hover,
+.site-navigation a:hover,
+.catalog-navigation-filter a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.user-profile-close,
+.header-logo:active,
+.user-navigation a:active,
+.catalog-navigation-link:active,
+.site-navigation a:active,
+.catalog-navigation-filter a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-navigation-link,
+.site-navigation,
+.info,
+.feedback,
+.modal-feedback p,
+.modal-send,
+.modal-login,
+.label,
+.catalog-item {
+	font-family: "Gilroy ExtraBold", serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 1);
+	font-weight: 800;
+}
+
+.catalog-item-price {
+	font-family: "Gilroy Light", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 1);
+}
+
+.catalog-navigation-filter {
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	font-weight: light;
+	color: rgba(255, 255, 255, 1);
+}
+
+a.info,
+a.feedback,
+.filter-button,
+.button {
+	background-image: linear-gradient(to bottom, white 45%, #f0c52e 30%, #f0c52e 70%, white 55%);
+}
+
+.link {
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: light;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.button {
+	font-family: "Gilroy ExtraBold", serif;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 1);
+	line-height: 24px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.link:hover,
+.button:hover {
+	color: rgba(0, 0, 0, 1);
+}
+
+.link:active {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+a.info:hover,
+a.feedback:hover {
+	background-color: rgba(240, 197, 46, 1);
+}
+
+a.info:active,
+a.feedback:active {
+	background-color: rgba(240, 197, 46, 1);
+	color: rgba(0, 0, 0, 0.3);
+}
+
+h1.catalog-title, h2.title {
+	font-family: "Gilroy ExtraBold", serif;
+	font-size: 47px;
+	line-height: 48px;
+	color: rgba(0, 0, 0, 1);
+	font-weight: 800;
+}
+
+.breadcrumbs a {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+	color: rgba(0, 0, 0, 0.1);
+}
+
+h3.filter-title,
+.back-button,
+.forward-button {
+	font-family: "Gilroy ExtraBold", serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 1);
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.back-button,
+.forward-button,
+.pages {
+	background-color: rgba(235, 235, 235, 1);
+}
+
+.back-button:hover,
+.forward-button:hover {
+	background-color: rgba(217, 217, 217, 1);
+}
+
+.back-button:active,
+.forward-button:active {
+	background-color: rgba(217, 217, 217, 1);
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pages {
+	font-family: "Gilroy ExtraBold", serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+li:first-of-type a.pages {
+	color: rgba(0, 0, 0, 1);
+}
+
+.pages:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.pages:active {
+	color: rgba(0, 0, 0, 1);
+}
+
+.color-filter-option-list li,
+.blutooth-filter-option li {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 40px;
+	color: rgba(0, 0, 0, 1);
+}
+
+.color-filter-option-list li:disabled,
+.blutooth-filter-option li:disabled {
+	color: rgba(166, 166, 166, 0);
+}
+
+.filter-list li:first-of-type a {
+	color: rgba(0, 0, 0, 1);
+}
+
+.filter-list a {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-list a:hover {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-list a:active {
+	color: rgba(0, 0, 0, 1);
+}
+
+ul.list {
+	list-style: circle;
+}
+
+.main-footer {
+	background-color: rgba(70, 70, 70, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+.footer-user-navigation a {
+	color: rgba(255, 255, 255, 0.7);
+}
+.footer-user-navigation a:hover {
+	color: rgba(255, 255, 255, 1);
+}
+.footer-user-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+a.footer-user-profile-close {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.site-navigation-footer a {
+	font-family: "Gilroy ExtraBold", serif;
+	font-size: 18px;
+	color: rgba(255, 255, 255, 1);
+	line-height: 24px;
+	font-weight: 800;
+}
+
+.site-navigation-footer a:hover {
+	color: rgba(255, 255, 255, 0.7);
+}
+.site-navigation-footer a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+a.footer-logo {
+	font-family: "Gilroy ExtraBold";
+	font-size: 48px;
+	color: rgba(255, 198, 0, 1);
+	line-height: 48px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.footer-logo:hover {
+	color: rgba(255, 198, 0, 0.6);
+}
+
+.footer-logo:active {
+	color: rgba(255, 198, 0, 0.3);
+}
+
