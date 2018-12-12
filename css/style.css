@@ -1,159 +1,172 @@
 /* веб шрифты */
-@font-family {
+@font-face {
 	font-family: "Gilroy ExtraBold";
 	src: url("../webfonts/gilroyextrabold.woff2") format("woff2");
 	src: url("../webfonts/gilroyextrabold.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
 }
 
-@font-family {
+@font-face {
 	font-family: "Gilroy Light";
 	src: url("../webfonts/gilroylight.woff2") format("woff2");
 	src: url("../webfonts/gilroylight.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
 }
 
-@font-family {
+@font-face {
 	font-family: "Open Sans";
 	src: url("../webfonts/opensans.woff2") format("woff2");
 	src: url("../webfonts/opensans.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
 }
 
-@font-family {
+@font-face {
 	font-family: "Open Sans Light";
 	src: url("../webfonts/opensanslight.woff2") format("woff2");
 	src: url("../webfonts/opensanslight.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
 }
 /*глобальные базовые стили*/
 body {
 	margin: 0;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
-	color: rgba(70, 70, 70, 1);
-	background-color: rgba(255, 255, 255, 1);
+	color: #464646;
+	background-color: #ffffff;
 }
 
 a {
 	text-decoration: none;
-	color: rgba(0, 0, 0, 1);
+	color: #000000;
 }
-
-ul {
-	list-style: none;
-}
+/*стилизация по классам*/
 
 .visually-hidden {
 	display: none;
 }
 
 .main-header {
-	background-color: rgba(247, 226, 150, 1);
+	background-color: #f7e296;
 }
-
-.header-logo {
-	font-family: "Gilroy ExtraBold";
-	font-size: 48px;
-	line-height: 48px;
-	font-weight: 800;
-	text-transform: uppercase;
-}
-
 
 .find-button {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
-	color: rgba(0, 0, 0, 1);
-	background-color: rgba(247, 226, 150, 1);
+	color: #000000;
+	background-color: #f7e296;
 	border: 2px solid black;
 }
 
 .find-button:hover {
-	color: rgba(255, 255, 255, 1);
-	background-color: rgba(0, 0, 0, 1);
+	color: #ffffff;
+	background-color: #000000;
 	border: none;
 }
 
 .find-button:active {
-	color: rgba(255, 255, 255, 1);
+	color: #ffffff;
 	background-color: rgba(0, 0, 0, 0.3);
 	border: none;
 }
 
 .header-logo:hover,
-.user-navigation a:hover,
+.user-navigation:hover,
 .catalog-navigation-link:hover,
-.site-navigation a:hover,
-.catalog-navigation-filter a:hover {
+.site-navigation:hover,
+.catalog-navigation-filter:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
 .user-profile-close,
 .header-logo:active,
-.user-navigation a:active,
+.user-navigation:active,
 .catalog-navigation-link:active,
-.site-navigation a:active,
-.catalog-navigation-filter a:active {
+.site-navigation:active,
+.catalog-navigation-filter:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-navigation-link,
 .site-navigation,
-.info,
-.feedback,
-.modal-feedback p,
+.modal-feedback,
 .modal-send,
 .modal-login,
 .label,
 .catalog-item {
-	font-family: "Gilroy ExtraBold", serif;
+	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 18px;
 	line-height: 24px;
-	color: rgba(0, 0, 0, 1);
-	font-weight: 800;
+	color: #000000;
 }
 
 .catalog-item-price {
-	font-family: "Gilroy Light", sans-serif;
+	font-family: "Gilroy Light", "Arial", "Verdana", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	color: rgba(0, 0, 0, 1);
+	color: #000000;
 }
 
 .catalog-navigation-filter {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 36px;
-	font-weight: light;
-	color: rgba(255, 255, 255, 1);
+	color: #000000;
 }
 
-a.info,
-a.feedback,
 .filter-button,
+.modal-send {
+	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
+	font-size: 18px;
+	color: #000000;
+	line-height: auto;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	background-image: linear-gradient(to bottom, white 45%, #f0c52e 30%, #f0c52e 70%, white 55%);
+	border: none;
+}
+
+.filter-button:hover,
+.modal-send:hover {
+	background: #f0c52e;
+}
+
+.info,
+.feedback,
 .button {
 	background-image: linear-gradient(to bottom, white 45%, #f0c52e 30%, #f0c52e 70%, white 55%);
 }
 
 .link {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 13px;
 	line-height: 20px;
-	font-weight: light;
 	color: rgba(0, 0, 0, 0.5);
 }
 
+.info,
+.feedback,
 .button {
-	font-family: "Gilroy ExtraBold", serif;
+	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 18px;
-	color: rgba(0, 0, 0, 1);
+	color: #000000;
 	line-height: 24px;
-	font-weight: 800;
 	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 
-.link:hover,
 .button:hover {
-	color: rgba(0, 0, 0, 1);
+	color: #000000;
+	background: #f0c52e;
+}
+
+.link:hover {
+	color: #000000;
 }
 
 .link:active {
@@ -162,79 +175,80 @@ a.feedback,
 
 .button:active {
 	color: rgba(0, 0, 0, 0.3);
+	background: #f0c52e;
 }
 
-a.info:hover,
-a.feedback:hover {
-	background-color: rgba(240, 197, 46, 1);
+.info:hover,
+.feedback:hover {
+	background: #f0c52e;
 }
 
-a.info:active,
-a.feedback:active {
-	background-color: rgba(240, 197, 46, 1);
+.info:active,
+.feedback:active {
+	background: #f0c52e;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-h1.catalog-title, h2.title {
-	font-family: "Gilroy ExtraBold", serif;
+.catalog-title,
+.title {
+	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 47px;
 	line-height: 48px;
-	color: rgba(0, 0, 0, 1);
-	font-weight: 800;
+	color: #000000;
 }
 
-.breadcrumbs a {
-	font-family: "Open Sans", sans-serif;
+.breadcrumbs {
+	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs a:active {
+.breadcrumbs:active {
 	color: rgba(0, 0, 0, 0.1);
 }
 
-h3.filter-title,
+.filter-title,
 .back-button,
 .forward-button {
-	font-family: "Gilroy ExtraBold", serif;
+	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 16px;
 	line-height: 24px;
-	color: rgba(0, 0, 0, 1);
-	font-weight: 800;
+	color: #000000;
 	text-transform: uppercase;
+	letter-spacing: 3px;
 }
 
 .back-button,
 .forward-button,
 .pages {
-	background-color: rgba(235, 235, 235, 1);
+	background-color: #ebebeb;
 }
 
 .back-button:hover,
 .forward-button:hover {
-	background-color: rgba(217, 217, 217, 1);
+	background-color: #d9d9d9;
 }
 
 .back-button:active,
 .forward-button:active {
-	background-color: rgba(217, 217, 217, 1);
+	background-color: #d9d9d9;
 	color: rgba(0, 0, 0, 0.3);
 }
 
 .pages {
-	font-family: "Gilroy ExtraBold", serif;
+	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-li:first-of-type a.pages {
-	color: rgba(0, 0, 0, 1);
+.page-1 {
+	color: #000000;
 }
 
 .pages:hover {
@@ -242,93 +256,121 @@ li:first-of-type a.pages {
 }
 
 .pages:active {
-	color: rgba(0, 0, 0, 1);
+	color: #000000;
 }
 
-.color-filter-option-list li,
-.blutooth-filter-option li {
-	font-family: "Open Sans", sans-serif;
+.filter-option-list,
+.blutooth-filter-option {
+	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 14px;
 	line-height: 40px;
-	color: rgba(0, 0, 0, 1);
+	color: #000000;
 }
 
-.color-filter-option-list li:disabled,
-.blutooth-filter-option li:disabled {
+.filter-option-list:disabled,
+.blutooth-filter-option:disabled {
 	color: rgba(166, 166, 166, 0);
 }
 
-.filter-list li:first-of-type a {
-	color: rgba(0, 0, 0, 1);
-}
-
-.filter-list a {
-	font-family: "Open Sans", sans-serif;
+.filter-list {
+	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.filter-list a:hover {
+.filter-list:hover {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.filter-list a:active {
-	color: rgba(0, 0, 0, 1);
+.filter-list:active {
+	color: #000000;
 }
 
-ul.list {
+.price {
+	color: #000000;
+}
+
+.list {
 	list-style: circle;
 }
 
+.no-style {
+	list-style: none;
+}
+
 .main-footer {
-	background-color: rgba(70, 70, 70, 1);
-	color: rgba(255, 255, 255, 1);
+	background-color: #464646;
+	color: #ffffff;
 }
 
-.footer-user-navigation a {
+.footer-user-navigation {
 	color: rgba(255, 255, 255, 0.7);
 }
-.footer-user-navigation a:hover {
-	color: rgba(255, 255, 255, 1);
+
+.footer-user-navigation:hover {
+	color: #ffffff;
 }
-.footer-user-navigation a:active {
+
+.footer-user-navigation:active {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-a.footer-user-profile-close {
+.profile-close {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.site-navigation-footer a {
-	font-family: "Gilroy ExtraBold", serif;
+.site-navigation-footer {
+	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 18px;
-	color: rgba(255, 255, 255, 1);
+	color: #ffffff;
 	line-height: 24px;
-	font-weight: 800;
 }
 
-.site-navigation-footer a:hover {
+.site-navigation-footer:hover {
 	color: rgba(255, 255, 255, 0.7);
 }
-.site-navigation-footer a:active {
+
+.site-navigation-footer:active {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-a.footer-logo {
-	font-family: "Gilroy ExtraBold";
-	font-size: 48px;
-	color: rgba(255, 198, 0, 1);
-	line-height: 48px;
-	font-weight: 800;
-	text-transform: uppercase;
+.input-style {
+	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(70, 70, 70, 0.4);
+	background-color: #f2f2f2;
 }
 
-.footer-logo:hover {
-	color: rgba(255, 198, 0, 0.6);
+.input-style:hover {
+	background-color: #ebebeb;
 }
 
-.footer-logo:active {
-	color: rgba(255, 198, 0, 0.3);
+.input-style:focus {
+	color: #464646;
+	background-color: #ffffff;
+	border: 3px solid #f7e296;
+}
+
+.input-style:invalid {
+	background-color: #f6dada;
+}
+
+.input-search {
+	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.input-search:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.input-search:focus {
+	color: #000000;
+	border-bottom: 2px solid black;
+	outline: none;
 }
 

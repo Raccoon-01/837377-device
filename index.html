@@ -9,27 +9,29 @@
 <body>
 	<header class="main-header">
 		<div>
-			<a class="header-logo">Device</a>
+			<a class="header-logo">
+				<img src="img/logo-header.svg" alt="Логотип Device" width="162" height="35">
+			</a>
 		</div>
 		<div>
 			<form action="#" method="get">
 				<label class="visually-hidden" for="search">Поиск по сайту</label>
-				<input type="text" id="search" name="search" placeholder="Поиск по сайту">
+				<input class="input-search" type="text" id="search" name="search" placeholder="Поиск по сайту">
 				<button class="find-button" type="submit" name="button">Найти</button>
 			</form>
-			<ul class="user-navigation">
+			<ul class=" no-style">
 				<li>
-					<a href="user-link.html">
+					<a class="user-navigation" href="user-link.html">
 						<img src="img/user.svg" alt="Войти" width="13" height="12">Войти
 					</a>
 				</li>
 				<li>
-					<a href="compare.html">
+					<a class="user-navigation" href="compare.html">
 						<img src="img/compare.svg" alt="Сравнить" width="10" height="10">Сравнить
 					</a>
 				</li>
 				<li>
-					<a href="cart.html">
+					<a class="user-navigation" href="cart.html">
 						<img src="img/cart.svg" alt="Корзина" width="12" height="12">Корзина
 					</a>
 				</li>
@@ -40,26 +42,26 @@
 				<a class="catalog-navigation-link" href="catalog.html">Каталог товаров
 				</a>
 				<div>
-				<ul class="catalog-navigation-filter">
+				<ul class="no-style">
 					<li>
-						<a href="#">Виртуальная реальность</a>
-						<a href="#">Моноподы для селфи</a>
-						<a href="#">Экшн-камеры</a>
+						<a class="catalog-navigation-filter" href="#">Виртуальная реальность</a>
+						<a class="catalog-navigation-filter" href="#">Моноподы для селфи</a>
+						<a class="catalog-navigation-filter" href="#">Экшн-камеры</a>
 					</li>
 					<li>
-						<a href="#">Фитнес-браслеты</a>
-						<a href="#">Умные часы</a>
+						<a class="catalog-navigation-filter" href="#">Фитнес-браслеты</a>
+						<a class="catalog-navigation-filter" href="#">Умные часы</a>
 					</li>
 					<li>
-						<a href="#">Квадрокоптеры</a>
+						<a class="catalog-navigation-filter" href="#">Квадрокоптеры</a>
 					</li>
 				</ul>
 				</div>
 			</div>
-			<ul class="site-navigation">
-				<li><a href="delivery.html">Доставка</a></li>
-				<li><a href="warranty.html">Гарантия</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
+			<ul class="no-style">
+				<li><a class="site-navigation" href="delivery.html">Доставка</a></li>
+				<li><a class="site-navigation" href="warranty.html">Гарантия</a></li>
+				<li><a class="site-navigation" href="contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -107,19 +109,21 @@
 	</main>
 	<footer class="main-footer">
 		<div>
-			<a class="footer-logo" href="#top">Device</a>
-			<ul class="footer-user-navigation">
-				<li><a href="user-link.html">
+			<a class="footer-logo" href="#top">
+				<img src="img/logo-footer.svg" alt="Логотип Device" width="163" height="36">
+			</a>
+			<ul class="no-style">
+				<li><a class="footer-user-navigation" href="user-link.html">
 					<img src="img/user-footer.svg" alt="Войти" width="13" height="12">Войти
 					</a>
 				</li>
 				<li>
-					<a href="compare.html">
+					<a class="footer-user-navigation" href="compare.html">
 						<img src="img/compare-footer.svg" alt="Сравнить" width="10" height="10">Сравнить
 					</a>
 				</li>
 				<li>
-					<a href="cart.html">
+					<a class="footer-user-navigation" href="cart.html">
 						<img src="img/cart-footer.svg" alt="Корзина" width="12" height="12">Корзина
 					</a>
 				</li>
@@ -127,10 +131,10 @@
 		</div>
 		<div>
 			<p>г. Москва, ул. Строителей, д. 15</p>
-			<ul class="site-navigation-footer">
-				<li><a href="delivery.html">Доставка</a></li>
-				<li><a href="warranty.html">Гарантия</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
+			<ul class="no-style">
+				<li><a class="site-navigation-footer" href="delivery.html">Доставка</a></li>
+				<li><a class="site-navigation-footer" href="warranty.html">Гарантия</a></li>
+				<li><a class="site-navigation-footer" href="contacts.html">Контакты</a></li>
 			</ul>
 			<p>Тел.: +7 (495) 495-95-95</p>
 		</div>
@@ -138,7 +142,7 @@
 			<span class="footer-decoration-line">
 				<img src="img/footer-decor-element.png" alt="Декаративная линия">
 			</span>
-			 <ul class="social-links">
+			 <ul class="no-style social-links">
 				<li>
 					<a href="#">
 						<img src="img/facebook.svg" width="32" height="32" alt="facebook">
@@ -162,36 +166,36 @@
 			</span>
 		</div>
 	</footer>
-	<section class="modal modal-feedback">
+	<section class="modal">
 			<h3 class="visually-hidden">Напишите нам</h3>
 			<form action="#" method="post">
-				<p>
+				<p class="modal-feedback">
 					<label for="user-name">Ваше имя:
 					</label>
-					<input type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+					<input class="input-style" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
 					<label for="user-email">Ваш email:
 					</label>
-					<input type="text" id="user-email" name="email" placeholder="email@example.com">
+					<input class="input-style" type="text" id="user-email" name="email" placeholder="email@example.com">
 				</p>
-				<p>
+				<p class="modal-feedback">
 					<label class="modal-feedback-text" for="user-text">Текст письма:</label>
-					<textarea id="user-text" name="text" rows="5" cols="50" placeholder="В свободной форме"></textarea>
+					<textarea class="input-style" id="user-text" name="text" rows="5" cols="50" placeholder="В свободной форме"></textarea>
 				</p>
 				<button class="modal-send" type="submit">Отправить</button>
 				<button class="modal-close" type="button">закрыть</button>
 			</form>
 		</section>
-		<section class="modal modal-login">
+		<section class="modal">
 			<!--<h2>Вход в личный кабинет</h2>
 			<p>Введите свой логин и пароль</p>-->
 			<form action="#" method="post">
-				<p>
+				<p class="modal-login">
 					<label for="user-login">Логин</label>
-					<input type="text" id="user-login" name="login" placeholder="Ваш логин">
+					<input class="input-style" type="text" id="user-login" name="login" placeholder="Ваш логин">
 				</p>
-				<p>
+				<p class="modal-login">
 					<label for="user-password">Пароль</label>
-					<input type="password" id="user-password" name="password" placeholder="Ваш пароль">
+					<input class="input-style" type="password" id="user-password" name="password" placeholder="Ваш пароль">
 				</p>
 				<button class="modal-close" type="button">Закрыть</button>
 			</form>

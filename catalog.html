@@ -9,17 +9,19 @@
 <body>
 	<header class="main-header">
 		<div>
-			<a class="header-logo" href="index.html">Device</a>
+			<a class="header-logo" href="index.html">
+				<img src="img/logo-header.svg" alt="Логотип Device" width="162" height="35">
+			</a>
 		</div>
 		<div>
 			<form action="#" method="get">
 				<label class="visually-hidden search" for="search">Поиск по сайту</label>
-				<input type="text" id="search" name="search" placeholder="Поиск по сайту">
+				<input class="input-search" type="text" id="search" name="search" placeholder="Поиск по сайту">
 				<button class="find-button" type="submit" name="button">Найти</button>
 			</form>
-			<ul class="user-navigation">
+			<ul class="no-style">
 				<li>
-					<a href="user-profile-page.html">
+					<a class="user-navigation" href="user-profile-page.html">
 						<img src="img/user.svg" alt="Войти на страницу пользователя" width="13" height="12">Валентин Петухов
 					</a>
 				</li>
@@ -27,12 +29,12 @@
 					<a class="user-profile-close" href="#">Выйти</a>
 				</li>
 				<li>
-					<a href="compare.html">
+					<a class="user-navigation" href="compare.html">
 						<img src="img/compare.svg" alt="Сравнить" width="10" height="10">Сравнить
 					</a>
 				</li>
 				<li>
-					<a href="cart.html">
+					<a class="user-navigation" href="cart.html">
 						<img src="img/cart.svg" alt="Корзина" width="12" height="12">Корзина
 					</a>
 				</li>
@@ -43,36 +45,36 @@
 			<a class="current catalog-navigation-link">Каталог товаров
 			</a>
 			<div>
-				<ul class="catalog-navigation-filter">
+				<ul class="no-style">
 					<li>
-						<a href="#">Виртуальная реальность</a>
-						<a href="#">Моноподы для селфи</a>
-						<a href="#">Экшн-камеры</a>
+						<a class="catalog-navigation-filter" href="#">Виртуальная реальность</a>
+						<a class="catalog-navigation-filter" href="#">Моноподы для селфи</a>
+						<a class="catalog-navigation-filter" href="#">Экшн-камеры</a>
 					</li>
 					<li>
-						<a href="#">Фитнес-браслеты</a>
-						<a href="#">Умные часы</a>
+						<a class="catalog-navigation-filter" href="#">Фитнес-браслеты</a>
+						<a class="catalog-navigation-filter" href="#">Умные часы</a>
 					</li>
 					<li>
-						<a href="#">Квадрокоптеры</a>
+						<a class="catalog-navigation-filter" href="#">Квадрокоптеры</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<ul class="site-navigation">
-			<li><a href="delivery.html">Доставка</a></li>
-			<li><a href="warranty.html">Гарантия</a></li>
-			<li><a href="contacts.html">Контакты</a></li>
+		<ul class="no-style">
+			<li><a class="site-navigation" href="delivery.html">Доставка</a></li>
+			<li><a class="site-navigation" href="warranty.html">Гарантия</a></li>
+			<li><a class="site-navigation" href="contacts.html">Контакты</a></li>
 		</ul>
 		</nav>
 	</header>
 	<main class="container">
 	<!--здесь будет основной контент-->
 		<h1 class="catalog-title">Моноподы для селфи</h1>
-		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="catalog.html">Каталог товаров</a></li>
-			<li><a class="breadcrumbs-current">Моноподы для селфи</a></li>
+		<ul class="no-style">
+			<li><a class="breadcrumbs" href="index.html">Главная</a></li>
+			<li><a class="breadcrumbs" href="catalog.html">Каталог товаров</a></li>
+			<li><a class="breadcrumbs breadcrumbs-current">Моноподы для селфи</a></li>
 		</ul>
 	<section>
 		<h2 class="visually-hidden">Фильтр и сортировка каталога товаров</h2>
@@ -87,7 +89,7 @@
 				</fieldset>
 				<fieldset class="color-filter">
 					<legend class="label">Цвет</legend>
-					<ul class="color-filter-option-list">
+					<ul class="no-style filter-option-list">
 						<li>
 							<input type="checkbox" id="filter-black" name="black" checked>
 							<label for="filter-black">Черный</label>
@@ -112,7 +114,7 @@
 				</fieldset>
 				<fieldset class="blutooth-filter">
 					<legend class="label">Blutooth</legend>
-					<ul class="blutooth-filter-option">
+					<ul class="no-style blutooth-filter-option">
 						<li>
 							<input type="radio" id="on" name="blutooth-option" checked>
 							<label for="on">Есть</label>
@@ -129,12 +131,12 @@
 		<div class="catalog">
 			<h3 class="visually-hidden">Список товаров</h3>
 			<h3 class="filter-title">Сортировка:</h3>
-			<ul class="filter-list">
-				<li><a href="#">По цене</a></li>
-				<li><a href="#">По типу</a></li>
-				<li><a href="#">По популярности</a></li>
+			<ul class="no-style">
+				<li><a class="price filter-list" href="#">По цене</a></li>
+				<li><a class="filter-list" href="#">По типу</a></li>
+				<li><a class="filter-list" href="#">По популярности</a></li>
 			</ul>
-			<ul class="catalog-list">
+			<ul class="no-style catalog-list">
 				<li>
 					<p>
 						<a href="catalog-item-1.html">
@@ -207,8 +209,8 @@
 		</div>
 		<div>
 			<button class="back-button" type="button">Назад</button>
-			<ul>
-				<li><a href="#" class="pages">1</a></li>
+			<ul class="no-style">
+				<li><a href="#" class="page-1 pages">1</a></li>
 				<li><a href="#" class="pages">2</a></li>
 				<li><a href="#" class="pages">3</a></li>
 			</ul>
@@ -218,23 +220,25 @@
 	</main>
 	<footer class="main-footer">
 		<div>
-			<a class="footer-logo" href="index.html">Device</a>
-			<ul class="footer-user-navigation">
+			<a class="footer-logo" href="index.html">
+				<img src="img/logo-footer.svg" alt="Логотип Device" width="163" height="36">
+			</a>
+			<ul class="no-style">
 				<li>
-					<a href="user-profile-page.html">
+					<a class="footer-user-navigation" href="user-profile-page.html">
 						<img src="img/user-footer.svg" alt="Войти на страницу пользователя" width="13" height="12">Валентин Петухов
 					</a>
 				</li>
 				<li>
-					<a class="footer-user-profile-close" href="#">Выйти
+					<a class="profile-close" href="#">Выйти
 					</a>
 				</li>
-				<li><a href="compare.html">
+				<li><a class="footer-user-navigation" href="compare.html">
 					<img src="img/compare-footer.svg" alt="Сравнить" width="10" height="10">Сравнить
 				</a>
 			</li>
 				<li>
-					<a href="cart.html">
+					<a class="footer-user-navigation" href="cart.html">
 						<img src="img/cart-footer.svg" alt="Корзина" width="12" height="12">Корзина
 					</a>
 				</li>
@@ -242,10 +246,10 @@
 		</div>
 		<div>
 			<p>г. Москва, ул. Строителей, д. 15</p>
-			<ul class="site-navigation-footer">
-				<li><a href="delivery.html">Доставка</a></li>
-				<li><a href="warranty.html">Гарантия</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
+			<ul class="no-style">
+				<li><a class="site-navigation-footer" href="delivery.html">Доставка</a></li>
+				<li><a class="site-navigation-footer" href="warranty.html">Гарантия</a></li>
+				<li><a class="site-navigation-footer" href="contacts.html">Контакты</a></li>
 			</ul>
 			<p>Тел.: +7 (495) 495-95-95</p>
 		</div>
@@ -254,7 +258,7 @@
 				<img src="img/footer-decor-element.png" alt="Декаративная линия">
 			</span>
 		<!--ниже иконки соц.сетей в белом цвете, позже с помощью CSS необх. установить прозрачность и др. цвет-->
-			<ul class="social-links">
+			<ul class="no-style social-links">
 				<li>
 					<a class="social-button" href="#">
 						<img src="img/facebook.svg" width="32" height="32" alt="facebook">
