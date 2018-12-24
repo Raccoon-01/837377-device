@@ -8,7 +8,6 @@
 </head>
 <body>
 	<header>
-		<div class="empty-space"></div>
 		<div class="container">
 			<div class="centralizer main-header">
 				<div class="logo">
@@ -25,26 +24,26 @@
 					<ul class="no-style header-list">
 						<li>
 							<a class="user-navigation user-navigation-enter" href="user-link.html">
-								<img src="img/user.svg" alt="Войти" width="13" height="12">Войти
+								Войти
 							</a>
 						</li>
 						<li>
 							<a class="user-navigation header-compare" href="compare.html">
-								<img src="img/compare.svg" alt="Сравнить" width="10" height="10">Сравнить
+								Сравнить
 							</a>
 						</li>
 						<li>
 							<a class="user-navigation header-cart" href="cart.html">
-								<img src="img/cart.svg" alt="Корзина" width="12" height="12">Корзина
+								Корзина
 							</a>
 						</li>
 					</ul>
 				</div>
 				<nav class="main-navigation">
-					<div class="catalog-navigation">
-						<a class="catalog-navigation-link" href="catalog.html">Каталог товаров
-						</a>
-						<div class="hidden-menu">
+					<ul class="no-style catalog-navigation">
+						<li>
+							<a class="catalog-navigation-link" href="catalog.html">Каталог товаров
+							</a>
 							<ul class="no-style menu-list">
 								<li class="menu-list-option">
 									<a class="catalog-navigation-filter" href="#">Виртуальная реальность</a>
@@ -59,8 +58,8 @@
 									<a class="catalog-navigation-filter" href="#">Квадрокоптеры</a>
 								</li>
 							</ul>
-						</div>
-					</div>
+						</li>
+					</ul>
 					<ul class="no-style info-list">
 						<li class="delivery">
 							<a class="site-navigation" href="delivery.html">Доставка</a>
@@ -85,7 +84,6 @@
 			<section class="information">
 				<div class="about-us">
 					<span class="decoration-line">
-						<img src="img/black-line.png" alt="Декоративная линия">
 					</span>
 					<h2 class="title">О нас</h2>
 					<p class="paragraph paragraph-1">Огромный выбор гаджетов не оставит равнодушным
@@ -104,18 +102,17 @@
 				</div>
 				<div class="contacts">
 					<span class="decoration-line">
-						<img src="img/black-line.png" alt="Декоративная линия">
 					</span>
-				   <h2 class="title">Контакты</h2>
-				   <p class="paragraph paragraph-1">Вы можете забрать товар сами, заехав в наш офис.
+					<h2 class="title">Контакты</h2>
+					<p class="paragraph paragraph-1">Вы можете забрать товар сами, заехав в наш офис.
 					Заодно, вы сможете проверить работоспособность
 					покупки. Всякое бывает.
-				   </p>
-				   <p class="modal modal-map paragraph">
+					</p>
+					<p class="modal modal-map paragraph">
 						<img src="img/map.jpg" width="560" height="222" alt="Наш адрес по улице Строителей, дом 15, г. Санкт-Петербург">
-				   </p>
-				   <button class="modal-close" type="button">Закрыть</button>
-				   <a class="feedback" href="contact-us.html">Напишите нам</a>
+					</p>
+					<button class="modal-close close-map" type="button">закрыть</button>
+					<a class="feedback" href="contact-us.html">Напишите нам</a>
 				</div>
 			</section>
 		</div>
@@ -124,22 +121,41 @@
 		<div class="container">
 			<div class="main-footer-style">
 				<a class="footer-logo" href="#top">
-					<img src="img/logo-footer.svg" alt="Логотип Device" width="163" height="36">
+					<svg xmlns="http://www.w3.org/2000/svg" width="163" height="36" viewBox="0 0 163 36">
+					<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+					<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+					<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+					<rdf:Description rdf:about=""/>
+					</rdf:RDF>
+					</x:xmpmeta>
+					<?xpacket end="w"?></metadata>
+					<defs>
+					<style>
+					.cls-1 {
+					font-size: 48px;
+					font-family: Gilroy;
+					font-weight: 800;
+					fill: #ffc600;
+					}
+					</style>
+					</defs>
+					<text id="logo" class="cls-1" x="-1.905" y="34.688">DEVICE</text>
+					</svg>
 				</a>
 				<ul class="no-style footer-list">
 					<li>
 						<a class="footer-user-navigation footer-user-enter" href="user-link.html">
-							<img src="img/user-footer.svg" alt="Войти" width="13" height="12">Войти
+							Войти
 						</a>
 					</li>
 					<li>
 						<a class="footer-user-navigation footer-compare" href="compare.html">
-							<img src="img/compare-footer.svg" alt="Сравнить" width="10" height="10">Сравнить
+							Сравнить
 						</a>
 					</li>
 					<li>
 						<a class="footer-user-navigation footer-cart" href="cart.html">
-							<img src="img/cart-footer.svg" alt="Корзина" width="12" height="12">Корзина
+							Корзина
 						</a>
 					</li>
 				</ul>
@@ -160,71 +176,62 @@
 				<p class="phone-number">Тел.: +7 (495) 495-95-95</p>
 			</div>
 			<div class="footer-social">
-				<span class="footer-decoration-line">
-					<img src="img/footer-decor-element.png" alt="Декаративная линия">
-				</span>
+				<span class="footer-decoration-line"></span>
 				 <ul class="no-style social-links">
 					<li>
-						<a href="#">
-							<img src="img/facebook.svg" width="32" height="32" alt="facebook">
-						</a>
+						<a href="#" class="social facebook"></a>
 					</li>
 					<li>
-						<a href="#">
-							<img src="img/instagram.svg" width="32" height="32" alt="instagram">
-						</a>
+						<a href="#" class="social instagram"></a>
 					</li>
 				   <li>
-					<a href="#">
-						<img src="img/twitter.svg" width="32" height="32" alt="twitter">
-					</a>
+					<a href="#" class="social twitter"></a>
 				   </li>
 				</ul>
 				<span class="logo-link">
-					<a href="https://htmlacademy.ru/intensive/htmlcss">
-						<img src="img/logo-html.svg" width="27" height="34" alt="Ссылка-значок на главную страницу">
-					</a>
+					<a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"></a>
 				</span>
 			</div>
 		</div>
 	</footer>
+	<section class="modal feedback-section">
+		<h3 class="visually-hidden">Напишите нам</h3>
+		<form class="write-us" action="#" method="post">
+			<div class="feedback-column">
+			<p class="modal-feedback name">
+				<label class="inputs-label" for="user-name">Ваше имя:
+				</label>
+				<input class="input-style inputs" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+			</p>
+			<p class="modal-feedback">
+				<label class="inputs-label" for="user-email">Ваш email:
+				</label>
+				<input class="input-style inputs" type="text" id="user-email" name="email" placeholder="email@example.com">
+			</p>
+			</div>
+			<p class="modal-feedback feedback-textarea">
+				<label class="textarea-label" for="user-text">Текст письма:</label>
+				<textarea class="input-style" id="user-text" name="text" rows="5" cols="50" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="modal-send" type="submit">Отправить</button>
+			<button class="modal-close" type="button">закрыть</button>
+		</form>
+	</section>
 	<section class="modal">
-			<h3 class="visually-hidden">Напишите нам</h3>
-			<form class="write-us" action="#" method="post">
-				<div class="feedback-column">
-				<p class="modal-feedback name">
-					<label class="inputs-label" for="user-name">Ваше имя:
-					</label>
-					<input class="input-style inputs" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
-				</p>
-				<p class="modal-feedback">
-					<label class="inputs-label" for="user-email">Ваш email:
-					</label>
-					<input class="input-style inputs" type="text" id="user-email" name="email" placeholder="email@example.com">
-				</p>
-				</div>
-				<p class="modal-feedback feedback-textarea">
-					<label class="textarea-label" for="user-text">Текст письма:</label>
-					<textarea class="input-style" id="user-text" name="text" rows="5" cols="50" placeholder="В свободной форме"></textarea>
-				</p>
-				<button class="modal-send" type="submit">Отправить</button>
-				<button class="modal-close" type="button">закрыть</button>
-			</form>
-		</section>
-		<section class="modal">
-			<!--<h2>Вход в личный кабинет</h2>
-			<p>Введите свой логин и пароль</p>-->
-			<form class="popup-login" action="#" method="post">
-				<p class="modal-login">
-					<label for="user-login">Логин</label>
-					<input class="input-style input-login" type="text" id="user-login" name="login" placeholder="Ваш логин">
-				</p>
-				<p class="modal-login">
-					<label for="user-password">Пароль</label>
-					<input class="input-style input-login" type="password" id="user-password" name="password" placeholder="Ваш пароль">
-				</p>
-				<button class="modal-close" type="button">Закрыть</button>
-			</form>
-		</section>
+		<!--<h2>Вход в личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>-->
+		<form class="popup-login" action="#" method="post">
+			<p class="modal-login">
+				<label for="user-login">Логин</label>
+				<input class="input-style input-login" type="text" id="user-login" name="login" placeholder="Ваш логин">
+			</p>
+			<p class="modal-login">
+				<label for="user-password">Пароль</label>
+				<input class="input-style input-login" type="password" id="user-password" name="password" placeholder="Ваш пароль">
+			</p>
+			<button class="modal-close" type="button">Закрыть</button>
+			<button class="modal-enter" type="button">Войти</button>
+		</form>
+	</section>
 </body>
 </html>
