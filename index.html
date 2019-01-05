@@ -77,15 +77,144 @@
 	</header>
 	<main>
 		<div class="container">
-			<section>
+			<section class="slider">
 				<h1 class="visually-hidden">Каталог товаров</h1>
-				<!--здесь будет основной контент-->
+				<div class="slider-inner">
+					<div class="white-line"></div>
+					<input class="slider-radio slider-radio-1" type="radio" id="btn-1" name="toggle" checked>
+					<input class="slider-radio slider-radio-2" type="radio" id="btn-2" name="toggle">
+					<input class="slider-radio slider-radio-3" type="radio" id="btn-3" name="toggle">
+					<div class="slider-controls">
+						<label class="slider-label" for="btn-1"></label>
+						<label class="slider-label" for="btn-2"></label>
+						<label class="slider-label" for="btn-3"></label>
+					</div>
+					<div class="slider-slides slider-slides-1">
+						<div class="slide-img slide-img-1">
+							<img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
+						</div>
+						<div class="img-info">
+							<h2 class="slider-head slider-head-one">Делай селфи, как Бен Стиллер!</h2>
+							<p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+							<a class="info property-info" href="product-info.html">Подробнее</a>
+							<table>
+								<tr class="item-property-style">
+									<td class="item-property">8,5 м</td>
+									<td class="item-property">5 кг</td>
+									<td class="item-property">Карбон</td>
+								</tr>
+								<tr class="item-property-name">
+									<td class="item-property">Длина палки</td>
+									<td class="item-property">Вес палки</td>
+									<td class="item-property">Материал</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="slider-slides slider-slides-2">
+						<div class="slide-img slide-img-2">
+							<img src="img/slider-2.png" alt="Фитнес браслет" width="345" height="485">
+						</div>
+						<div class="img-info">
+							<h2 class="slider-head slider-head-two">Худеем<br> правильно!</h2>
+							<p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<a class="info property-info" href="product-info.html">Подробнее</a>
+							<table>
+								<tr class="item-property-style">
+									<td class="item-property">48 часов</td>
+								</tr>
+								<tr class="item-property-name">
+									<td class="item-property">Без подзарядки</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="slider-slides slider-slides-3">
+						<div class="slide-img slide-img-3">
+							<img src="img/slider-3.png" alt="Квадрокоптер с камерой" width="526" height="334">
+						</div>
+						<div class="img-info">
+							<h2 class="slider-head slider-head-three">Порхает как бабочка, жалит как пчела!</h2>
+							<p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<a class="info property-info" href="product-info.html">Подробнее</a>
+							<table>
+								<tr class="item-property-style">
+									<td class="item-property">800 м</td>
+									<td class="item-property">50 м</td>
+								</tr>
+								<tr class="item-property-name">
+									<td class="item-property">Дальность полета</td>
+									<td class="item-property">Радиус поражения</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="popular-menu">
+					<ul class="popular-menu-list">
+						<li class="popular-menu-option">
+							<a href="#" class="popular-link"><span class="popular-menu-img popular-1"></span>Виртуальная реальность</a>
+						</li>
+						<li class="popular-menu-option">
+							<a href="#" class="popular-link"><span class="popular-menu-img popular-2"></span>Моноподы для селфи</a>
+						</li>
+						<li class="popular-menu-option">
+							<a href="#" class="popular-link"><span class="popular-menu-img popular-3"></span>Экшн камеры</a>
+						</li>
+						<li class="popular-menu-option">
+							<a href="#" class="popular-link"><span class="popular-menu-img popular-4"></span>Фитнес браслеты</a>
+						</li>
+						<li class="popular-menu-option">
+							<a href="#" class="popular-link"><span class="popular-menu-img popular-5"></span>Умные часы</a>
+						</li>
+						<li class="popular-menu-option">
+							<a href="#" class="popular-link"><span class="popular-menu-img popular-6"></span>Квадрокоптеры</a>
+						</li>
+					</ul>
+			</div>
+			<section class="purchase-delivery-credit">
+				<aside class="sales-left-column">
+					<ul class="no-style sales-list">
+						<li>
+							<a href="#" class="sales sales-delivery">Доставка</a>
+						</li>
+						<li>
+							<a href="#" class="sales guarantee">Гарантия</a>
+						</li>
+						<li>
+							<a href="#" class="sales credit">Кредит</a>
+						</li>
+					</ul>
+					<span class="decor-line"></span>
+				</aside>
+				<div class="sales-info">
+					<h3 class="delivery-head">Доставка</h3>
+					<p class="delivery-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+				</div>
+				<div class="delivery-man-img"></div>
+			</section>
+			<section class="our-partners">
+				<ul class="no-style partners-list">
+					<li>
+						<a href="#" class="link-to-partner"><span class="partners-logo logo-partner-1"></span></a>
+					</li>
+					<li>
+						<a href="#" class="link-to-partner"><span class="partners-logo logo-partner-2"></span></a>
+					</li>
+					<li>
+						<a href="#" class="link-to-partner"><span class="partners-logo logo-partner-3"></span></a>
+					</li>
+					<li>
+						<a href="#" class="link-to-partner"><span class="partners-logo logo-partner-4"></span></a>
+					</li>
+				</ul>
 			</section>
 			<section class="information">
 				<div class="about-us">
 					<span class="decoration-line">
 					</span>
-					<h2 class="title">О нас</h2>
+					<h3 class="title">О нас</h3>
 					<p class="paragraph paragraph-1">Огромный выбор гаджетов не оставит равнодушным
 					гика, который есть в каждом из нас.
 					</p>
@@ -103,7 +232,7 @@
 				<div class="contacts">
 					<span class="decoration-line">
 					</span>
-					<h2 class="title">Контакты</h2>
+					<h3 class="title">Контакты</h3>
 					<p class="paragraph paragraph-1">Вы можете забрать товар сами, заехав в наш офис.
 					Заодно, вы сможете проверить работоспособность
 					покупки. Всякое бывает.

@@ -17,7 +17,7 @@
 				</div>
 				<div class="navigation">
 					<form class="search-form" action="#" method="get">
-						<label class="visually-hidden search" for="search">Поиск по сайту</label>
+						<label class="visually-hidden" for="search">Поиск по сайту</label>
 						<input class="input-search" type="text" id="search" name="search" placeholder="Поиск по сайту">
 						<button class="find-button" type="submit" name="button">Найти</button>
 					</form>
@@ -83,13 +83,13 @@
 			<div class="breadcrumbs-style">
 				<h1 class="catalog-title">Моноподы для селфи</h1>
 				<ul class="no-style breadcrumbs-list">
-					<li>
+					<li class="breadcrumbs-element">
 						<a class="breadcrumbs" href="index.html">Главная</a>
 					</li>
-					<li>
+					<li class="breadcrumbs-element">
 						<a class="breadcrumbs" href="catalog.html">Каталог товаров</a>
 					</li>
-					<li>
+					<li class="breadcrumbs-element">
 						<a class="breadcrumbs breadcrumbs-current">Моноподы для селфи</a>
 					</li>
 				</ul>
@@ -102,9 +102,18 @@
 				<form class="filter-form" action="#" method="get">
 					<fieldset class="price-range-filter">
 						<legend class="label">Стоимость</legend>
+						<div class="rangeslider">
+							<label class="range-label range-toggle-min" for="price-min">от
+								<input class="range-input" type="range" name="price-min" id="price-min" value="0" min="0" max="8000">
+							</label>
+							<label class="range-label range-toggle-max" for="price-max">
+								<input class="range-input" type="range" name="price-max" id="price-max" value="5000" min="0" max="8000">до
+							</label>
+					  </div>
+						<!--
 						<label for="range-id">от
 							<input class="range-input" type="range" id="range-id" name="price-range" min="0" max="8000" value="5000">до
-						</label><!--необходимо доработать-->
+						</label>необходимо доработать-->
 					</fieldset>
 					<fieldset class="color-filter">
 						<legend class="label">Цвет</legend>
@@ -152,7 +161,7 @@
 				<div class="sorting">
 					<h3 class="sorting-title">Сортировка:</h3>
 					<ul class="no-style product-list">
-						<li><a class="price filter-list" href="#">По цене</a></li>
+						<li><a class="current-price filter-list" href="#">По цене</a></li>
 						<li><a class="filter-list" href="#">По типу</a></li>
 						<li><a class="filter-list" href="#">По популярности</a></li>
 					</ul>
