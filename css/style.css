@@ -58,6 +58,7 @@ img {
 .main-header {
 	background-color: #f7e296;
 	padding: 0 60px 45px 60px;
+	margin-bottom: 34px;
 }
 
 .user-navigation:hover,
@@ -146,7 +147,7 @@ img {
 	line-height: normal;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	background-image: linear-gradient(to bottom, white 45%, #f0c52e 40%, #f0c52e 60%, white 55%);
+	background-image: linear-gradient(to bottom, #ffffff 45%, #f0c52e 40%, #f0c52e 60%, #ffffff 55%);
 	border: none;
 	min-height: 40px;
 }
@@ -155,6 +156,10 @@ img {
 .modal-send:hover,
 .modal-enter:hover {
 	background: #f0c52e;
+}
+
+.filter-button {
+	background-image: linear-gradient(to bottom, #eeeeee 45%, #f0c52e 40%, #f0c52e 60%, #eeeeee 55%);
 }
 
 .info,
@@ -221,7 +226,7 @@ img {
 .credit-head {
 	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 47px;
-	line-height: 48px;
+	/*line-height: 48px;*/
 	color: #000000;
 }
 
@@ -455,7 +460,7 @@ img {
 }
 
 /*временный стиль outline, удалить*/
-* {outline: 1px solid blue;}
+/* {outline: 1px solid blue;}*/
 /*стили макросетки*/
 .container {
 	width: 1160px;
@@ -475,7 +480,8 @@ img {
 .navigation {
 	display: flex;
 	align-items: center;
-	margin-bottom: 34px;
+	margin-bottom: 23px;
+	margin-top: -10px;
 }
 
 .header-list {
@@ -627,7 +633,7 @@ img {
 
 .information {
 	display: flex;
-	margin-bottom: 75px;
+	margin-bottom: 80px;
 	justify-content: space-between;
 }
 
@@ -647,18 +653,12 @@ img {
 }
 
 .title {
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 
 .list {
-	margin-top: 0;
-	margin-left: 0;
-	margin-right: 0;
-	margin-bottom: 61px;
-	padding-bottom: 0;
-	padding-top: 0;
-	padding-right: 0;
-	padding-left: 35px;
+	margin: 0 0 55px 0;
+	padding-bottom: 0 0 0 35px;
 	font-family: "Gilroy ExtraBold", "Arial", "Verdana", sans-serif;
 	font-size: 16px;
 	line-height: 40px;
@@ -680,7 +680,7 @@ img {
 }
 
 .modal-map {
-	margin-bottom: 77px;
+	margin-bottom: 70px;
 }
 
 .contacts {
@@ -964,13 +964,13 @@ img {
 
 .breadcrumbs-element a[href]::after {
 	top: 14px;
-	right: 15px;
+	right: 23px;
 	transform: rotate(45deg);
 }
 
 .breadcrumbs-element a[href]::before {
 	top: 17px;
-	right: 15px;
+	right: 23px;
 	transform: rotate(-45deg);
 }
 
@@ -980,12 +980,10 @@ img {
 
 .main-content {
 	display: flex;
-	justify-content: center;
 }
 
 .catalog-menu-header {
 	display: flex;
-	margin: 0;
 	padding: 0;
 	background-color: #efefef;
 }
@@ -993,8 +991,8 @@ img {
 .filter-header {
 	width: calc(50% - 250px);
 	margin: 0;
-	padding: 0;
-	background-color: rgba(229, 229, 229, 0.6);
+	text-align: right;
+	background-color: #dcdcdc;
 }
 
 .sorting-header {
@@ -1013,19 +1011,20 @@ img {
 }
 
 .filter-menu {
-	width: 202px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: calc(50% - 250px);
 	margin: 0;
 	padding: 0;
-	padding-left: 60px;
-	padding-right: 67px;
-	margin-right: 73px;
+	padding-top: 70px;
 	background-color: #efefef;
 }
 
 .filter-title {
 	display: inline-block;
 	margin-top: 0;
-	padding-top: 23px;
+	padding: 23px 181px 0 0;
 }
 
 .filter-title,
@@ -1036,6 +1035,8 @@ img {
 .filter-form {
 	display: flex;
 	flex-direction: column;
+	width: 200px;
+	padding-right: 70px;
 }
 
 .label {
@@ -1044,33 +1045,6 @@ img {
 	padding-bottom: 17px;
 	border-top: 2px solid black;
 }
-/*фильтр по цене - начало стиля*/
-
-.price-range-filter {
-	position: relative;
-	border: none;
-	min-height: 140px;
-	padding: 0;
-}
-/*НА ДОРАБОТКЕ
-.range-input {
-	position: absolute;
-	opacity: 0;
-}
-
-.range-input::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20px;
-	height: 22px;
-	border-radius: 50% 50%;
-	border: 8px solid #ffffff;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
-}
-*/
-/*фильтр по цене - конец стиля*/
 /*чекбоксы изменение начало*/
 .color-filter {
 	border: none;
@@ -1088,14 +1062,14 @@ img {
 }
 
 .checkbox-style {
-	padding-left: 30px;
+	padding-left: 35px;
 }
 
 .checkbox-style::before {
 	content: "";
 	position: absolute;
-	top: 5px;
-	left: 0;
+	top: 9px;
+	left: -3px;
 	display: inline-block;
 	cursor: pointer;
 	width: 19px;
@@ -1108,8 +1082,8 @@ img {
 	content: "";
 	position: absolute;
 	display: none;
-	top: 2px;
-	left: 10px;
+	top: 5px;
+	left: 5px;
 	border: solid #000000;
 	border-width: 0 5px 5px 0;
 	padding: 8px 4px;
@@ -1148,7 +1122,7 @@ img {
 /*радио кнопки начало*/
 .blutooth-filter {
 	border: none;
-	min-height: 175px;
+	min-height: 165px;
 	padding: 0;
 }
 
@@ -1168,8 +1142,8 @@ img {
 .radio-button::before {
 	content: "";
 	position: absolute;
-	top: 5px;
-	left: 0;
+	top: 7px;
+	left: -4px;
 	display: inline-block;
 	cursor: pointer;
 	width: 16px;
@@ -1182,8 +1156,8 @@ img {
 	display: none;
 	content: "";
 	position: absolute;
-	top: 13px;
-	left: 8px;
+	top: 15px;
+	left: 4px;
 	cursor: pointer;
 	width: 9px;
 	height: 9px;
@@ -1229,7 +1203,8 @@ img {
 	display: flex;
 	flex-direction: column;
 	width: 760px;
-	min-height: 1215px;
+	padding-left: 70px;
+	padding-top: 70px;
 }
 
 .sorting {
@@ -1242,10 +1217,10 @@ img {
 .product-list {
 	display: flex;
 	justify-content: space-between;
-	width: 300px;
+	width: 287px;
 	margin: 0;
 	padding: 0;
-	margin-right: 35px;
+	margin-right: 32px;
 	min-height: 52px;
 	padding-top: 18px;
 }
@@ -1253,10 +1228,9 @@ img {
 .sorting-title {
 	width: 180px;
 	text-align: left;
-	min-height: 47px;
-	padding-top: 23px;
+	padding: 23px 0 0 73px;
 	margin: 0;
-	margin-right: 30px;
+	margin-right: 55px;
 }
 
 .sorting-arrows {
@@ -1326,6 +1300,34 @@ img {
 	min-height: 94px;
 }
 
+.catalog-item-new {
+	position: relative;
+}
+
+.catalog-item-new::before {
+	content: "new";
+	position: absolute;
+	top: 52px;
+	right: 43px;
+	color: rgba(0, 0, 0, 0.2);
+	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.catalog-item-new::after {
+	content: "";
+	position: absolute;
+	top: 34px;
+	right: 30px;
+	display: block;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
 .ci-2 {
 	width: 180px;
 }
@@ -1392,6 +1394,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	background-color: #ebebeb;
+	margin-bottom: 72px;
 }
 
 .back-button,
@@ -1503,22 +1506,13 @@ img {
 	box-sizing: border-box;
 }
 
-/*ГРАДИЕНТ ДЛЯ ФОНА (меняется по ширине экрана, не подходит)
-
-.main-content {
-	background-image: linear-gradient(to right, #eeeeee 30%, #ffffff 30%);
-}
-
-.filter-menu {
-	background-color: #eeeeee;
-} */
-
 /*СЛАЙДЕР*/
 .slider {
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 95px;
-	background-image: linear-gradient(to bottom, #f7e296 27%, #ffffff 27%, #ffffff 73%);
+	margin-top: -45px;
+	background-image: linear-gradient(to bottom, #f7e296 24%, #ffffff 24%, #ffffff 76%);
 }
 
 .white-line {
@@ -1641,7 +1635,7 @@ img {
 	font-size: 47px;
 	line-height: 56px;
 	color: #000000;
-	margin: 75px 0 18px 0;
+	margin: 80px 0 18px 0;
 	padding: 0;
 	display: inline-block;
 	position: relative;
@@ -1651,7 +1645,7 @@ img {
 .slider-head-one::after {
 	content: "01";
 	position: absolute;
-	top: 2px;
+	top: -13px;
 	left: 330px;
 	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 179.2px;
@@ -1662,7 +1656,7 @@ img {
 .slider-head-two::after {
 	content: "02";
 	position: absolute;
-	top: 2px;
+	top: -13px;
 	left: 300px;
 	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 179.2px;
@@ -1673,7 +1667,7 @@ img {
 .slider-head-three::after {
 	content: "03";
 	position: absolute;
-	top: 2px;
+	top: -13px;
 	left: 300px;
 	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 179.2px;
@@ -1683,7 +1677,7 @@ img {
 
 .slider-text {
 	margin: 0;
-	margin-bottom: 43px;
+	margin-bottom: 40px;
 	padding: 0;
 }
 
@@ -1715,7 +1709,7 @@ img {
 }
 
 .popular-menu {
-	margin-bottom: 62px;
+	margin-bottom: 77px;
 }
 
 .popular-menu-list {
@@ -1734,6 +1728,10 @@ img {
 	justify-content: center;
 	align-items: center;
 	fill: #363636;
+}
+
+.popular-monopod {
+	align-items: flex-end;
 }
 
 .popular-link {
@@ -1756,7 +1754,9 @@ img {
 
 .purchase-delivery-credit {
 	display: flex;
-	margin-bottom: 105px;
+	margin-bottom: 95px;
+	background-image: linear-gradient(to bottom, #ffffff 26%, #e5e5e5 26%, #e5e5e5 75%);
+	justify-content: center;
 }
 
 .sales-left-column {
@@ -1775,12 +1775,11 @@ img {
 	min-width: 160px;
 	padding: 0;
 	padding-top: 8px;
-	height: 32px;
+	min-height: 30px;
 	margin: 0;
-	margin-bottom: 40px;
-	margin-left: 20px;
+	margin-bottom: 24px;
 	text-align: center;
-	background-image: linear-gradient(to bottom, white 45%, #f0c52e 40%, #f0c52e 60%, white 55%);
+	background-image: linear-gradient(to bottom, #e5e5e5 45%, #f0c52e 40%, #f0c52e 60%, #e5e5e5 55%);
 }
 
 .sales:hover {
@@ -1790,8 +1789,8 @@ img {
 .sales:active,
 .sales-delivery {
 	display: inline-block;
-	width: 278px;
-	height: 32px;
+	width: 258px;
+	min-height: 30px;
 	background: #000000;
 	color: #f7e184;
 	padding-left:20px;
@@ -1809,36 +1808,29 @@ img {
 	margin-right: 117px;
 }
 
-.purchase-delivery-credit {
-	overflow: hidden;
-}
-
 .sales-info {
 	width: 300%;
-	padding-top: 80px;
+	padding-top: 73px;
 }
 
 .sales-info-delivery {
 	background: url("../img/delivery.png") no-repeat;
-	background-position: 90% 80px;
-	width: 880px;
-	float: left;
-	padding-right: 160px;
+	background-position: 89% 85px;
+	width: 760px;
 }
 
 .sales-info-warranty {
+	display: none;
 	background: url("../img/warranty.png") no-repeat;
-	background-position: 90% 80px;
-	width: 880px;
-	padding-right: 160px;
-	float: left;
+	background-position: 89% 89px;
+	width: 760px;
 }
 
 .sales-info-credit {
 	background: url("../img/credit.png") no-repeat;
-	background-position: 90% 80px;
-	width: 880px;
-	float: left;
+	background-position: 89% 89px;
+	width: 760px;
+	display: none;
 }
 
 .delivery-head,
@@ -1857,7 +1849,7 @@ img {
 .delivery-head,
 .warranty-head,
 .credit-head {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .partners-list {
@@ -1865,82 +1857,76 @@ img {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 105px;
+	margin-bottom: 70px;
 }
 
 .link-to-partner:hover {
 	filter: grayscale(100%);
 	opacity: 0.2;
 }
-/*Не работает для hidden div-ов по sales-info
-.sales-delivery:active ~ .sales-info-delivery {
-	transform: translateX(0);
-}
 
-.sales-warranty:active ~ .sales-info-warranty {
-	transform: translateX(-1040px);
-}
-
-.sales-credit:active ~ .sales-info-credit {
-	transform: translateX(-2080px);
-}
-*/
 /*СТИЛИ ФИЛЬТРА СТОИМОСТИ НАЧАЛО, необх. доработать*/
+.price-range-filter {
+	position: relative;
+	border: none;
+	padding: 0;
+}
 
-.range-input {
-	display: none;
+.range-controls {
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: #d7dcde;
+}
+
+.range-controls .bar {
+	width: 60%;
+	height: 2px;
+	background: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-controls .toggle-min {
+	left: -7px;
+}
+
+.range-controls .toggle-max {
+	left: 105px;
+}
+
+.price-controls {
+	font-family: "Gilroy Light", "Arial", "Verdana", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	padding-bottom: 35px;
 }
 
 .range-label {
-	position: relative;
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.2);
 }
 
-.range-label::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 175px;
-	height: 2px;
-	background-color: #dbdbdb;
-	z-index: 1;
-}
-
-.range-label::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 110px;
-	height: 2px;
-	background-color: #91c92f;
-	z-index: 2;
-}
-
-.range-toggle-min::before {
-	content: "";
-	position: absolute;
-	top: -15px;
-	left: -5px;
-	width: 6px;
-	height: 6px;
-	border: 14px solid yellow;
-	background-color: #dbdbdb;
-	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
-	z-index: 3;
-}
-
-.range-toggle-max::before {
-	content: "";
-	position: absolute;
-	top: -15px;
-	left: 85px;
-	width: 6px;
-	height: 6px;
-	border: 14px solid yellow;
-	background-color: #dbdbdb;
-	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
-	z-index: 3;
+.range-input {
+	width: 50px;
+	border: none;
+	background-color: #eeeeee;
+	color: rgba(0, 0, 0, 0.2);
+	padding-right: 15px;
 }

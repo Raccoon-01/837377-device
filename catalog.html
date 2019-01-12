@@ -120,18 +120,23 @@
 				<form class="filter-form" action="#" method="get">
 					<fieldset class="price-range-filter">
 						<legend class="label">Стоимость</legend>
-						<div class="rangeslider">
-							<label class="range-label range-toggle-min" for="price-min">от
-								<input class="range-input" type="range" name="price-min" id="price-min" value="0" min="0" max="8000">
-							</label>
-							<label class="range-label range-toggle-max" for="price-max">
-								<input class="range-input" type="range" name="price-max" id="price-max" value="5000" min="0" max="8000">до
-							</label>
-					  </div>
-						<!--
-						<label for="range-id">от
-							<input class="range-input" type="range" id="range-id" name="price-range" min="0" max="8000" value="5000">до
-						</label>необходимо доработать-->
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<label class="range-label range-toggle-min" for="price-min">от
+									<input class="range-input" type="text" name="price-min" id="price-min" value="0">
+								</label>
+								<label class="range-label range-toggle-max" for="price-max">до
+									<input class="range-input" type="text" name="price-max" id="price-max" value="5000">
+								</label>
+							</div>
+						</div>
 					</fieldset>
 					<fieldset class="color-filter">
 						<legend class="label">Цвет</legend>
@@ -229,7 +234,7 @@
 						</div>
 					</li>
 					<li class="catalog-list-position">
-						<p class="items-paragraph">
+						<p class="items-paragraph catalog-item-new">
 							<a href="catalog-item-4.html">
 								<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 							</a>
