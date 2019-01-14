@@ -58,7 +58,11 @@ img {
 .main-header {
 	background-color: #f7e296;
 	padding: 0 60px 45px 60px;
-	margin-bottom: 34px;
+	margin-bottom: 46px;
+}
+
+.main-header-index {
+	margin-bottom: 35px;
 }
 
 .user-navigation:hover,
@@ -101,6 +105,10 @@ img {
 	color: #000000;
 }
 
+.site-navigation-contacts {
+	padding-left: 105px;
+}
+
 .catalog-navigation-link,
 .site-navigation {
 	text-transform: uppercase;
@@ -110,7 +118,7 @@ img {
 .catalog-navigation-link {
 	position: relative;
 	display: inline-block;
-	padding-right: 25px;
+	padding-right: 21px;
 }
 
 .catalog-navigation-link::after {
@@ -393,7 +401,7 @@ img {
 	display: inline-block;
 	width: 316px;
 	height: 49px;
-	padding-left: 40px;
+	padding-left: 39px;
 	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
@@ -428,7 +436,7 @@ img {
 	content: "";
 	position: absolute;
 	top: 17px;
-	left: 5px;
+	left: 3px;
 	width: 16px;
 	height: 16px;
 	background: url("../img/search.svg") no-repeat 0 0;
@@ -469,12 +477,16 @@ img {
 }
 
 .logo {
-	margin-top: 40px;
+	margin-top: 39px;
 }
 
 .header-logo {
 	position: relative;
 	top: -15px;
+}
+
+.logo-index {
+	top: -17px;
 }
 
 .navigation {
@@ -498,6 +510,10 @@ img {
 	margin-left: auto;
 	margin-right: 197px;
 	padding-left: 25px;
+}
+
+.index-perfect {
+	margin-right: 175px;
 }
 
 .user-navigation-enter::before {
@@ -529,13 +545,13 @@ img {
 .user-name {
 	position: relative;
 	padding-left: 25px;
-	margin-right: 10px;
+	margin-right: 17px;
 }
 
 .user-name::before {
 	content: "";
 	position: absolute;
-	top: 5px;
+	top: 3px;
 	left: 0;
 	width: 13px;
 	height: 12px;
@@ -544,7 +560,7 @@ img {
 
 .header-profile-close {
 	margin-left: -30px;
-	margin-right: 30px;
+	margin-right: 17px;
 }
 
 .header-compare,
@@ -557,7 +573,7 @@ img {
 	content: "";
 	position: absolute;
 	top: 5px;
-	left: 0;
+	left: 6px;
 	width: 10px;
 	height: 10px;
 	background: url("../img/compare.svg") no-repeat 0 0;
@@ -566,8 +582,8 @@ img {
 .header-cart::before {
 	content: "";
 	position: absolute;
-	top: 5px;
-	left: 0;
+	top: 3px;
+	left: 5px;
 	width: 12px;
 	height: 12px;
 	background: url("../img/cart.svg") no-repeat 0 0;
@@ -575,7 +591,7 @@ img {
 
 .main-navigation {
 	display: flex;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
 }
 
 .catalog-navigation {
@@ -596,7 +612,11 @@ img {
 }
 
 .delivery {
-	margin-right: 38px;
+	margin-right: 31px;
+}
+
+.warranty-index {
+	margin-right: 105px;
 }
 
 .contacts-link {
@@ -633,7 +653,7 @@ img {
 
 .information {
 	display: flex;
-	margin-bottom: 80px;
+	margin-bottom: 82px;
 	justify-content: space-between;
 }
 
@@ -652,18 +672,26 @@ img {
 	background-color: #000000;
 }
 
-.title {
-	margin-bottom: 50px;
+.title-information {
+	margin: 0;
+	padding: 0;
+	margin-top: 37px;
+	margin-bottom: 41px;
+	line-height: 48px;
 }
 
 .list {
 	margin: 0 0 55px 0;
-	padding-bottom: 0 0 0 35px;
+	padding: 0 0 0 16px;
 	font-family: "Gilroy ExtraBold", "Arial", "Verdana", sans-serif;
 	font-size: 16px;
 	line-height: 40px;
 	color: #000000;
 	list-style: circle;
+}
+
+.marker {
+	padding-left: 19px;
 }
 
 .paragraph {
@@ -675,12 +703,16 @@ img {
 	margin-bottom: 29px;
 }
 
+.paragraph-before-map {
+	margin-bottom: 39px;
+}
+
 .paragraph-2 {
 	margin-bottom: 67px;
 }
 
 .modal-map {
-	margin-bottom: 70px;
+	margin-bottom: 61px;
 }
 
 .contacts {
@@ -715,7 +747,7 @@ img {
 .main-footer-style {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 }
 
 .footer-list,
@@ -744,13 +776,14 @@ img {
 
 .footer-list-1 {
 	display: flex;
-	width: 440px;
+	width: 430px;
 	justify-content: space-between;
 }
 
 .address {
 	width: 300px;
 	font-style: normal;
+	margin-right: 5px;
 }
 
 .phone-number {
@@ -939,7 +972,7 @@ img {
 .catalog-title {
 	display: inline-block;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 29px;
 }
 
 .breadcrumbs-list {
@@ -950,7 +983,7 @@ img {
 
 .breadcrumbs-element {
 	position: relative;
-	padding-right: 40px;
+	padding-right: 37px;
 }
 
 .breadcrumbs-element a[href]::after,
@@ -964,13 +997,13 @@ img {
 
 .breadcrumbs-element a[href]::after {
 	top: 14px;
-	right: 23px;
+	right: 19px;
 	transform: rotate(45deg);
 }
 
 .breadcrumbs-element a[href]::before {
 	top: 17px;
-	right: 23px;
+	right: 19px;
 	transform: rotate(-45deg);
 }
 
@@ -1283,6 +1316,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
+	margin-bottom: -6px;
 	padding: 0;
 	justify-content: space-between;
 }
@@ -1296,8 +1330,8 @@ img {
 
 .catalog-item {
 	width: 260px;
-	padding-top: 20px;
-	min-height: 94px;
+	padding-top: 24px;
+	min-height: 91px;
 }
 
 .catalog-item-new {
@@ -1334,7 +1368,7 @@ img {
 
 .catalog-item-price {
 	width: 80px;
-	margin-top: 20px;
+	margin-top: 24px;
 	text-align: right;
 }
 
@@ -1394,7 +1428,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	background-color: #ebebeb;
-	margin-bottom: 72px;
+	margin-bottom: 76px;
 }
 
 .back-button,
@@ -1510,7 +1544,7 @@ img {
 .slider {
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 95px;
+	margin-bottom: 93px;
 	margin-top: -45px;
 	background-image: linear-gradient(to bottom, #f7e296 24%, #ffffff 24%, #ffffff 76%);
 }
@@ -1677,14 +1711,14 @@ img {
 
 .slider-text {
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 43px;
 	padding: 0;
 }
 
 .property-info {
 	position: relative;
 	margin: 0;
-	margin-bottom: 50px;
+	margin-bottom: 48px;
 	padding: 8px 43px;
 }
 
@@ -1705,11 +1739,12 @@ img {
 	margin: 0;
 	padding: 0;
 	padding-right: 75px;
+	padding-bottom: 5px;
 	text-align: left;
 }
 
 .popular-menu {
-	margin-bottom: 77px;
+	margin-bottom: 80px;
 }
 
 .popular-menu-list {
@@ -1767,7 +1802,7 @@ img {
 .sales-list {
 	margin: 0;
 	padding: 0;
-	padding-top: 80px;
+	padding-top: 81px;
 }
 
 .sales {
@@ -1777,7 +1812,7 @@ img {
 	padding-top: 8px;
 	min-height: 30px;
 	margin: 0;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 	text-align: center;
 	background-image: linear-gradient(to bottom, #e5e5e5 45%, #f0c52e 40%, #f0c52e 60%, #e5e5e5 55%);
 }
@@ -1810,7 +1845,7 @@ img {
 
 .sales-info {
 	width: 300%;
-	padding-top: 73px;
+	padding-top: 82px;
 }
 
 .sales-info-delivery {
@@ -1849,7 +1884,7 @@ img {
 .delivery-head,
 .warranty-head,
 .credit-head {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .partners-list {
