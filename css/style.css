@@ -147,7 +147,8 @@ img {
 
 .filter-button,
 .modal-send,
-.modal-enter {
+.modal-enter,
+.modal-close {
 	display: inline-block;
 	font-family: "Gilroy ExtraBold", "Arial", "Verdana", serif;
 	font-size: 18px;
@@ -162,7 +163,8 @@ img {
 
 .filter-button:hover,
 .modal-send:hover,
-.modal-enter:hover {
+.modal-enter:hover,
+.modal-close:hover {
 	background: #f0c52e;
 }
 
@@ -376,11 +378,20 @@ img {
 }
 
 .input-style {
+	display: inline-block;
 	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgba(70, 70, 70, 0.4);
 	background-color: #f2f2f2;
+	border: none;
+	min-height: 50px;
+	padding-left: 15px;
+}
+
+.textarea-style {
+	display: inline-block;
+	padding-top: 15px;
 }
 
 .input-style:hover {
@@ -713,35 +724,11 @@ img {
 
 .modal-map {
 	margin-bottom: 61px;
+	cursor: pointer;
 }
 
 .contacts {
 	position: relative;
-}
-
-.modal-map::before {
-	display: none;
-	content: "";
-	position: fixed;
-	top: 50px;
-	right: 100px;
-	width: 960px;
-	height: 559px;
-	background: url("../img/map-big.jpg") no-repeat 0 0;
-	z-index: 6;
-}
-
-.modal-map::after {
-	display: none;
-	content: "";
-	position: fixed;
-	top: 72px;
-	right: 122px;
-	width: 55px;
-	height: 55px;
-	background: url("../img/modal-close.svg") no-repeat 0 0;
-	opacity: 0.5;
-	z-index: 7;
 }
 
 .main-footer-style {
@@ -1459,6 +1446,7 @@ img {
 	min-height: 553px;
 	background-color: #ffffff;
 	z-index: 4;
+	box-shadow: 0 10px 20px 0 #cfcfcf;
 }
 
 .write-us {
@@ -1507,10 +1495,56 @@ img {
 	margin-bottom: 50px;
 }
 
-.modal-send,
+.modal-send {
+	width: 200px;
+}
+
 .modal-close,
 .modal-enter {
-	width: 200px;
+	width: 145px;
+}
+
+.hidden-modal-map {
+	display: none;
+	content: "";
+	position: fixed;
+	top: 100px;
+	right: 350px;
+	width: 960px;
+	height: 559px;
+	z-index: 6;
+	box-shadow: 0 10px 20px 0 #cfcfcf;
+}
+
+.map-close,
+.feedback-close {
+	content: "";
+	cursor: pointer;
+	position: fixed;
+	top: 150px;
+	right: 400px;
+	width: 55px;
+	height: 55px;
+	background: url("../img/modal-close.svg") no-repeat 0 0;
+	opacity: 0.5;
+	z-index: 7;
+	font-size: 0;
+}
+
+.feedback-close {
+	top: 210px;
+	right: 550px;
+}
+
+.map-close:hover,
+.feedback-close:hover {
+	background: url("../img/modal-close.svg") no-repeat 0 0;
+	cursor: pointer;
+}
+
+.modal-controls {
+	display: flex;
+	justify-content: space-between;
 }
 
 .log-in {
@@ -1520,8 +1554,8 @@ img {
 	right: 25%;
 	width: 420px;
 	background-color: #ffffff;
-	box-shadow: 0 1px 5px 1px #ffc600;
-	z-index: 5;
+	box-shadow: 0 10px 20px 0 #cfcfcf;
+	z-index: 15;
 }
 
 .popup-login {
@@ -1964,4 +1998,53 @@ img {
 	background-color: #eeeeee;
 	color: rgba(0, 0, 0, 0.2);
 	padding-right: 15px;
+}
+
+@keyframes bounce {
+	0% {
+	transform: translateY(-300px);
+	}
+
+	70% {
+	transform: translateY(30px);
+	}
+
+	90% {
+	transform: translateY(-30px);
+	}
+
+	100% {
+	transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+	transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+	transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+	transform: translateX(10px);
+	}
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
