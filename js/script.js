@@ -1,104 +1,77 @@
-var link = document.querySelector(".login-link");
-var linkFooter = document.querySelector(".footer-login-link");
-var write = document.querySelector(".feedback");
-var popup = document.querySelector(".log-in");
+var link = document.querySelector(".feedback");
 var modal = document.querySelector(".feedback-section");
-var close = popup.querySelector(".modal-close");
-var closeModal = modal.querySelector(".modal-close");
-var form = popup.querySelector(".popup-login");
-var login = popup.querySelector(".input-login");
-var password = popup.querySelector(".input-password");
+var close = modal.querySelector(".modal-close");
+var mapLink = document.querySelector(".contacts-map");
+var mapPopup = document.querySelector(".hidden-modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
+var escapeButton = 27;
+/*нижеуказанные переменные для заполнения и валидации формы*/
+var form = modal.querySelector(".write-us");
+var userName = modal.querySelector(".name-surname");
+var userMail = modal.querySelector(".mail");
+var userText = modal.querySelector(".textarea-style");
 var isStorageSupport = true;
 var storage = "";
 
 try {
-	storage = localStorage.getItem("login");
+	storage = localStorage.getItem("userName" || "userMail");
 	} catch (err) {
 	isStorageSupport = false;
 }
 
-link.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	popup.classList.add("modal-show");
-	if (storage) {
-		login.value = storage;
-		password.focus();
-	} else {
-		login.focus();
-	}
-});
-
-linkFooter.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	popup.classList.add("modal-show");
-	if (storage) {
-		login.value = storage;
-		password.focus();
-	} else {
-		login.focus();
-	}
-});
-
-write.addEventListener("click", function (evt) {
+link.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	modal.classList.add("modal-show");
+	if (storage) {
+		userName.value = storage;
+		userMail.focus();
+	} else if (storage) {
+		userName.value = storage;
+		userMail.value = storage;
+		userText.focus();
+	} else {
+		userName.focus();
+	}
 });
 
 close.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	popup.classList.remove("modal-show");
-	popup.classList.remove("modal-error");
 	modal.classList.remove("modal-show");
+	modal.classList.remove("modal-error");
 });
 
-closeModal.addEventListener("click", function (evt) {
+mapLink.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	modal.classList.remove("modal-show");
+	mapPopup.classList.add("modal-show-map");
+});
+
+mapClose.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	mapPopup.classList.remove("modal-show-map");
 });
 
 form.addEventListener("submit", function (evt) {
-	if (!login.value || !password.value) {
+	if (!userName.value || !userMail.value || !userText.value) {
 		evt.preventDefault();
-		popup.classList.remove("modal-error");
-		popup.offsetWidth = popup.offsetWidth;
-		popup.classList.add("modal-error");
+		modal.classList.remove("modal-error");
+		modal.offsetWidth = modal.offsetWidth;
+		modal.classList.add("modal-error");
 	} else {
 		if (isStorageSupport) {
-			localStorage.setItem("login", login.value);
+			localStorage.setItem("userName", userName.value);
+			localStorage.setItem("userMail", userMail.value);
 			}
 		}
 });
 
 window.addEventListener("keydown", function (evt) {
-	if (evt.keyCode === 27) {
-		evt.preventDefault();
-	if (popup.classList.contains("modal-show")) {
-		popup.classList.remove("modal-show");
-		popup.classList.remove("modal-error");
+	if (evt.keyCode === escapeButton) {
+		if (modal.classList.contains("modal-show") 
+		|| mapPopup.classList.contains("modal-show-map")) {
 		modal.classList.remove("modal-show");
-		}
+		mapPopup.classList.remove("modal-show-map");
+		modal.classList.remove("modal-error");
+		};
 	}
 });
 
-var mapLink = document.querySelector(".contacts-map");
-var mapPopup = document.querySelector(".hidden-modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
-
-mapLink.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	mapPopup.classList.add("modal-show");
-});
-
-mapClose.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	mapPopup.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function (evt) {
-	evt.preventDefault();
-	if (evt.keyCode === 27) {
-	if (mapPopup.classList.contains("modal-show")) {
-	mapPopup.classList.remove("modal-show");
-	}
-	}
-});

@@ -282,7 +282,7 @@
 						<a href="#" class="sales sales-delivery">Доставка</a>
 					</li>
 					<li>
-						<a  class="sales sales-warranty">Гарантия</a>
+						<a  href="#" class="sales sales-warranty">Гарантия</a>
 					</li>
 					<li>
 						<a href="#" class="sales sales-credit">Кредит</a>
@@ -423,19 +423,19 @@
 			</div>
 		</div>
 	</footer>
-	<section class="modal feedback-section">
+	<section class="modal feedback-section popup">
 		<h3 class="visually-hidden">Напишите нам</h3>
 		<form class="write-us" action="#" method="post">
 			<div class="feedback-column">
 			<p class="modal-feedback name">
 				<label class="inputs-label" for="user-name">Ваше имя:
 				</label>
-				<input class="input-style inputs" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+				<input class="input-style inputs name-surname" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
 			</p>
 			<p class="modal-feedback">
 				<label class="inputs-label" for="user-email">Ваш email:
 				</label>
-				<input class="input-style inputs" type="text" id="user-email" name="email" placeholder="email@example.com">
+				<input class="input-style inputs mail" type="text" id="user-email" name="email" placeholder="email@example.com">
 			</p>
 			</div>
 			<p class="modal-feedback feedback-textarea">
@@ -448,25 +448,7 @@
 			</div>
 		</form>
 	</section>
-	<section class="modal log-in">
-		<!--<h2>Вход в личный кабинет</h2>
-		<p>Введите свой логин и пароль</p>-->
-		<form class="popup-login" action="#" method="post">
-			<p class="modal-login">
-				<label for="user-login">Логин</label>
-				<input class="input-style input-login" type="text" id="user-login" name="login" placeholder="Ваш логин">
-			</p>
-			<p class="modal-login">
-				<label for="user-password">Пароль</label>
-				<input class="input-style input-login input-password" type="password" id="user-password" name="password" placeholder="Ваш пароль">
-			</p>
-			<div class="modal-controls">
-				<button class="modal-enter" type="button">Войти</button>
-				<button class="modal-close" type="button">Закрыть</button>
-			</div>
-		</form>
-	</section>
-	<section class="modal hidden-modal-map">
+	<section class="modal hidden-modal-map popup">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2skz!4v1547644633707" width="960" height="559" style="border:0" allowfullscreen></iframe>
 		<button class="modal-close map-close" type="button">Закрыть</button>
 	</section>

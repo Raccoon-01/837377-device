@@ -1450,6 +1450,7 @@ img {
 }
 
 .write-us {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	width: 760px;
@@ -1508,10 +1509,10 @@ img {
 	display: none;
 	content: "";
 	position: fixed;
-	top: 100px;
-	right: 350px;
-	width: 960px;
+	top: 50%;
+	right: 50%;
 	height: 559px;
+	transform: translate(50%, -50%);
 	z-index: 6;
 	box-shadow: 0 10px 20px 0 #cfcfcf;
 }
@@ -1520,9 +1521,9 @@ img {
 .feedback-close {
 	content: "";
 	cursor: pointer;
-	position: fixed;
-	top: 150px;
-	right: 400px;
+	position: absolute;
+	top: 25px;
+	right: 20px;
 	width: 55px;
 	height: 55px;
 	background: url("../img/modal-close.svg") no-repeat 0 0;
@@ -1532,8 +1533,8 @@ img {
 }
 
 .feedback-close {
-	top: 210px;
-	right: 550px;
+	top: 20px;
+	right: 20px;
 }
 
 .map-close:hover,
@@ -1929,9 +1930,14 @@ img {
 	margin-bottom: 70px;
 }
 
-.link-to-partner:hover {
+.link-to-partner {
 	filter: grayscale(100%);
 	opacity: 0.2;
+}
+
+.link-to-partner:hover {
+	filter: none;
+	opacity: 1;
 }
 
 /*СТИЛИ ФИЛЬТРА СТОИМОСТИ НАЧАЛО, необх. доработать*/
@@ -2000,24 +2006,6 @@ img {
 	padding-right: 15px;
 }
 
-@keyframes bounce {
-	0% {
-	transform: translateY(-300px);
-	}
-
-	70% {
-	transform: translateY(30px);
-	}
-
-	90% {
-	transform: translateY(-30px);
-	}
-
-	100% {
-	transform: translateY(0);
-	}
-}
-
 @keyframes shake {
 	0%,
 	100% {
@@ -2040,11 +2028,53 @@ img {
 	}
 }
 
+@keyframes softshadow {
+	0% {
+		box-shadow: 0 5px 500px 0 #e5e5e5;
+	}
+
+	20% {
+		box-shadow: 0 10px 400px 0 #e5e5e5;
+	}
+
+	40% {
+		box-shadow: 0 10px 300px 0 #e5e5e5;
+	}
+
+	60% {
+		box-shadow: 0 10px 200px 0 #e5e5e5;
+	}
+
+	80% {
+		box-shadow: 0 10px 100px 0 #e5e5e5;
+	}
+
+	100% {
+		box-shadow: 0 10px 20px 0 #e5e5e5;
+	}
+}
+
+@keyframes scale {
+	0% {
+	transform: scale(1.5);
+	}
+
+	100% {
+	transform: scale(1);
+	}
+}
+
 .modal-show {
 	display: block;
-	animation: bounce 0.6s;
+	animation: scale 0.6s;
 }
 
 .modal-error {
 	animation: shake 0.6s;
 }
+
+.modal-show-map {
+	display: block;
+	animation: softshadow 0.6s;
+}
+
