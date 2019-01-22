@@ -391,7 +391,7 @@ img {
 	line-height: 18px;
 	color: rgba(70, 70, 70, 0.4);
 	background-color: #f2f2f2;
-	border: none;
+	border: 3px solid transparent;
 	min-height: 50px;
 	padding-left: 15px;
 }
@@ -426,18 +426,24 @@ img {
 	font-family: "Open Sans", "Arial", "Verdana", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
-	color: rgba(0, 0, 0, 0.3);
 	background: transparent;
 	border-style: none;
 	border-bottom: 2px solid transparent;
 }
 
-.input-search:hover {
+.input-search:hover::placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.input-search:hover:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.input-search:hover::-ms-input-placeholder { /* Microsoft Edge */
 	color: rgba(0, 0, 0, 0.6);
 }
 
 .input-search:focus {
-	color: #000000;
 	border-bottom: 2px solid black;
 	outline: none;
 }
@@ -446,6 +452,33 @@ img {
 	display: inline-block;
 	vertical-align: middle;
 }
+
+.input-search::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.input-search:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.input-search::-ms-input-placeholder { /* Microsoft Edge */
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.input-search:focus::placeholder {
+	color: #000000;
+	opacity: 1;
+}
+
+.input-search:focus:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #000000;
+}
+
+.input-search:focus::-ms-input-placeholder { /* Microsoft Edge */
+	color: #000000;
+}
+
+
 
 .search-form {
 	position: relative;
@@ -687,7 +720,11 @@ img {
 	width: 560px;
 }
 
-.decoration-line {
+.title-information::before {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: 0;
 	display: inline-block;
 	vertical-align: middle;
 	width: 80px;
@@ -696,9 +733,10 @@ img {
 }
 
 .title-information {
+	position: relative;
 	margin: 0;
 	padding: 0;
-	margin-top: 37px;
+	padding-top: 66px;
 	margin-bottom: 41px;
 	line-height: 48px;
 }
@@ -775,6 +813,7 @@ img {
 
 .footer-list-1 {
 	display: flex;
+	flex-wrap: wrap;
 	width: 430px;
 	justify-content: space-between;
 }
@@ -798,19 +837,25 @@ img {
 }
 
 .social-links {
+	position: relative;
 	display: flex;
-	width: 160px;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 1000px;
+	justify-content: center;
+	padding-left: 100px;
 	margin-right: 47px;
 }
 
-.footer-decoration-line {
+.social-links::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
 	display: inline-block;
 	vertical-align: middle;
 	margin-top: 13px;
 	width: 80px;
 	height: 7px;
-	margin-right: 12px;
 	background-color: #ffc600;
 }
 
@@ -1161,6 +1206,10 @@ img {
 	border-color: rgba(0, 0, 0, 0.3);
 	color: rgba(0, 0, 0, 0.3);
 }
+
+.input:focus + .checkbox-style {
+	outline: 3px dotted #464646;
+}
 /*чекбоксы изменение конец*/
 /*радио кнопки начало*/
 .blutooth-filter {
@@ -1243,6 +1292,11 @@ img {
 .radio-btn:disabled + .radio-button::before {
 	border: 5px solid rgba(0, 0, 0, 0.25);
 }
+
+.radio-btn:focus + .radio-button {
+	outline: 3px dotted #464646;
+}
+
 /*радио кнопки конец*/
 .catalog {
 	display: flex;
@@ -1261,6 +1315,7 @@ img {
 
 .product-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 287px;
 	margin: 0;
@@ -1818,6 +1873,8 @@ img {
 
 .popular-menu-list {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -1842,7 +1899,6 @@ img {
 	display: inline-block;
 	vertical-align: top;
 	width: 160px;
-	margin-right: 40px;
 }
 
 .popular-link:hover .popular-menu-img {
@@ -1970,6 +2026,7 @@ img {
 
 .partners-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
@@ -1977,6 +2034,7 @@ img {
 }
 
 .link-to-partner {
+	width: 260px;
 	filter: grayscale(100%);
 	opacity: 0.2;
 }

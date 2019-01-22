@@ -66,7 +66,7 @@ form.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === escapeButton) {
-		if (modal.classList.contains("modal-show") 
+		if (modal.classList.contains("modal-show")
 		|| mapPopup.classList.contains("modal-show-map")) {
 		modal.classList.remove("modal-show");
 		mapPopup.classList.remove("modal-show-map");
